@@ -12,8 +12,8 @@ body {
 
 /* Style the header */
 header {
-    background-color: #a46161; /* Header background color */
-    color: #fff; /* Header text color */
+    background-color: #333; /* Header background color */
+    color: #bbafaf; /* Header text color */
     padding: 10px 0;
 }
 
