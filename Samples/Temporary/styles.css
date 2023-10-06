@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(253, 251, 248);
+    margin: 0;
+    padding: 0;
+}
+
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+    padding: 5px;
+}
+
+.hamburger {
+    background-color: #333;
+    height: 4px;
+    width: 30px;
+    margin: 2px 0;
+    border-radius: 2px;
+    transition: transform 0.3s;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle:checked + .toggle-button .hamburger:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#nav-toggle:checked + .toggle-button .hamburger:nth-child(2) {
+    opacity: 0;
+}
+
+#nav-toggle:checked + .toggle-button .hamburger:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.vertical-nav {
+    width: 0px;
+    background-color: #1ab5cd;
+    color: #fbf9fc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-x: hidden;
+    transition: width 0.3s;
+}
+
+.vertical-nav ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 10;
+    width: 60px;
+}
+
+.vertical-nav li {
+    display: block;
+    padding: 15px;
+}
+
+.vertical-nav li:hover {
+    background-color: #1ab5cd;
+}
+
+.vertical-nav a {
+    text-decoration: none;
+    color: #0c0c0c;
+    display: block;
+}
+
+#nav-toggle:checked ~.vertical-nav {
+    width: 200px;
+    background-color: #1ab5cd;
+    color: #fbf9fc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-x: hidden;
+    transition: width 0.3s;
+}
+
+
