@@ -397,7 +397,7 @@
             font-size: 13px;
         }
     
-    /*This is about the Vertical Navigation*/
+        /*This is about the Vertical Navigation*/
     }
     .toggle-button {
         background-color: transparent;
@@ -495,8 +495,6 @@
     text-align: center; /* Center-align the text */
     padding: 24px 16px; /* Add some padding to the links for spacing */
     text-decoration: none; /* Remove underlines from links */
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
   }
   
   /* Change the link color on hover */
@@ -508,8 +506,6 @@
   /* Style for the top bar */
   .Top-bar {
     text-align:center; /* Center-align the links within the top bar */
-    /*padding: 10px 16px; Add some padding */
-    margin
   }
   
   /* Add some margin to the top bar for spacing */
