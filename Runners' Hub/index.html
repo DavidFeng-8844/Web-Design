@@ -9,6 +9,7 @@
     <title>Runner's Hub</title>
 </head>
 <body>
+  <!--Vertical Navbar-->
   <input type="checkbox" id="nav-toggle">
   <label for="nav-toggle" class="toggle-button">
       <div class="hamburger"></div>
@@ -18,7 +19,7 @@
     <nav class="vertical-nav">
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#training">Training</a></li>
         <li><a href="#nutrition">Nutrition</a></li>
@@ -31,7 +32,7 @@
         <div class="Navbar">
             <div class="Top-bar">
               <a href="#home" class="nav-home">HOME</a>
-              <a href="#about" class="nav-about">ABOUT</a>
+              <a href="about.html" class="nav-about">ABOUT</a>
               <a href="#contact" class="nav-contact"> CONTACT</a>
               <a href="#training" class="nav-training">TRAINING</a>
               <a href="#nutrition" class="nav-nutrition">NUTRITION</a>
@@ -54,8 +55,8 @@
           </div> -->  
     </div>
     <section id="home">
-        <div class="hero">
-         <div class="hero-text">
+        <div class="wel">
+         <div class="wel-text">
           <h1>Welcome to
              Runner's Hub</h1>
              <br>
@@ -70,7 +71,7 @@
         </div>
     </section>
     <main>
-      <div class="about" id="about">
+     <div class="about" id="about">
         <div>
         <h2 class="title">
                Get to Know me
@@ -175,7 +176,8 @@
             </p>
 
           </div>
- </div>
+        </div>
+    </main>
  <div class="training-main">
   <div class="training-image">
     <img src="https://spaces.w3schools.com/images/U5kQvbQWoG0.jpg" alt="Photo by Scott Webb | Unsplash"/>
@@ -255,15 +257,26 @@
       </div>
   
     </div>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else { 
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
-    </script>
+    <footer>
+      <div class="footer">
+        <div class="footer-list">
+          <h4>Runner's Hub</h4>
+          <p>7018 Baker St.
+            Englewood, NJ 07631</p>
+          <p>4 Trenton St.
+            Geneva, IL 60134</p>
+          <p>116 N. Maiden St.
+            Hempstead, NY 11550</p>
+        </div>
+        <div class="footer-list">
+          <h4>Opening Hour</h4>
+          <p>Monday- Saturday: 8am -9:30pm</p>
+          <p>Sunday:8am- 9pm</p>
+        </div>
+        <div class="footer-list">
+          <h4>Say hello</h4>
+          <p> <i class="fa fa-phone " style="margin-right: 8px;font-size: 20px;"></i> 763-957-6781</p>
+          <p><i class="fa fa-phone" style="margin-right: 8px;font-size: 20px;"></i>706-734-2591</p>
+          <p><i class="fa fa-envelope " style=" margin-right: 5px;font-size: 20px;"></i>
 </body>
 </html>

@@ -17,24 +17,30 @@
       padding: 0;
     }
     section{
-        margin-top: 46px;
+        margin-top: 0px;
     }
     
-    .hero{
-        background-image:url("Runners'Hub/Images/Asiangame1.jpg");
+    .wel{
+        background-image:url('../Images/Asiangame1.jpg');
         background-repeat: no-repeat;
-        background-size: cover;
-        height: 600px;
-        
-    
-        
     }
-    .hero-text{
-        background-color: rgba(16, 196, 224, 0.5);
+    
+    .wel-text{
+        background-color: #1ab5cd;
         height: 600px;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .wel-text h3{
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        margin-bottom: 120px;
+        
     }
     h1{
         color:white;
@@ -49,17 +55,34 @@
         text-align: center;
         
     }
-    .about{
+    .about h2{
+        color:rgb(11, 9, 9);
+        text-shadow: 8px 10px 10px #f9f4f4;
+        border-top:none;
+        border-bottom: none;
+        padding: 60px 50px 50px 0px;
+        margin-left: 18px;
+        text-transform: uppercase;
+        font-size: 54px;
+        font-weight: 800;
+        text-align: left;
+    }
+    .about-text{
+        background-color: rgb(230, 147, 4);
+        padding: 28px ;
+        width:500px;
         
+    }
+    .about{
+
+        /*margin-top: 0px;*/
         height: 700px;
-        background-image: url("https://spaces.w3schools.com/images/xwMlVSqP20U.jpg");
+        background-image: url("Runners' Hub/Images/AsianGame2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
         background-position: center;
-        
-    
-        
+        margin-top: 0px;       
     }
     .icons{
         font-size: 20px;
@@ -78,20 +101,7 @@
         width: 80%; 
         
     }
-    .about-main{
-        width: 90%;
-         
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        
-    }
-    .about-text{
-        background-color: rgb(230, 147, 4);
-        padding: 30px ;
-        width:500px;
-        
-    }
+
     
     h3{
         font-size: 40px;
@@ -255,14 +265,14 @@
     /*Large screens - Desktop*/
     @media screen and (min-width: 1700px) {
         section{
-            background-color: rgba(25, 43, 210, 0.9);
+            background-color: rgba(240, 240, 241, 0.9);
         }
-        .hero{
+        .wel{
             
             margin: auto;
             height: 900px;
         }
-        .hero-text{
+        .wel-text{
             height: 900px;
         }
         .training-main{
@@ -278,12 +288,12 @@
     
     /*medium screens - Laptops*/
     @media screen and (max-width: 1024px) {
-        .hero{
+        .wel{
             background-image:url("https://spaces.w3schools.com/images/f4RBYsY2hxA_400_320.jpg");
             height: 500px;
             background-position: center;
         }
-        .hero-text{
+        .wel-text{
             height: 500px;
         }
         h1{
@@ -297,12 +307,12 @@
     
     /*Small screens - tablets*/
     @media screen and (max-width: 768px) {
-        .hero{
+        .wel{
             background-image:url("https://spaces.w3schools.com/images/f4RBYsY2hxA_600_400.jpg");
             height: 600px;
             background-position: center;
         }
-        .hero-text{
+        .wel-text{
             height: 600px;
             text-align: center;
         }
@@ -329,14 +339,14 @@
     
     /*Extra small screens - phones*/
     @media screen and (max-width: 480px) {
-        .hero{
+        .wel{
             background-image:url("https://spaces.w3schools.com/images/f4RBYsY2hxA_600_400.jpg");
             height: 500px;
             background-position: center;
             
     
         }
-        .hero-text{
+        .wel-text{
             height: 500px;
         }
         h1{
@@ -495,7 +505,7 @@
     display: block; /* Display the links as blocks for better styling */
     color: #fff; /* Text color */
     text-align: center; /* Center-align the text */
-    padding: 24px 16px; /* Add some padding to the links for spacing */
+    padding: 24px 16px 28px 16px; /* Add some padding to the links for spacing */
     text-decoration: none; /* Remove underlines from links */
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
@@ -511,11 +521,11 @@
   .Top-bar {
     text-align:center; /* Center-align the links within the top bar */
     /*padding: 10px 16px; Add some padding */
-    margin
+    margin:0px 0px 0px 0px;
   }
   
   /* Add some margin to the top bar for spacing */
   .Top-bar a {
-    margin: 50px 0px 0 0;
+    margin: 50px 0px 0px 0px;
   }
   
