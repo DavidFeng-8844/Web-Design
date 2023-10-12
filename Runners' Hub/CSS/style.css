@@ -21,7 +21,7 @@
     }
     
     .wel{
-        background-image:url('../Images/Asiangame1.jpg');
+        /*background-image:url('../Images/Asiangame1.jpg');*/
         background-repeat: no-repeat;
     }
     
@@ -55,9 +55,19 @@
         text-align: center;
         
     }
+    .about{
+        /*margin-top: 0px;*/
+        height: 700px;
+        background-image: url("../Images/Renshou-HM.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        background-position: center;
+        margin-top: 0px;       
+    }
     .about h2{
-        color:rgb(11, 9, 9);
-        text-shadow: 8px 10px 10px #f9f4f4;
+        color:rgb(243, 239, 239);
+        text-shadow: 8px 10px 10px #010101;
         border-top:none;
         border-bottom: none;
         padding: 60px 50px 50px 0px;
@@ -70,19 +80,10 @@
     .about-text{
         background-color: rgb(230, 147, 4);
         padding: 28px ;
-        width:500px;
+        width:300px;
+        height: 400px;
+        color: #000000;
         
-    }
-    .about{
-
-        /*margin-top: 0px;*/
-        height: 700px;
-        background-image: url("Runners' Hub/Images/AsianGame2.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-        background-position: center;
-        margin-top: 0px;       
     }
     .icons{
         font-size: 20px;
@@ -289,7 +290,7 @@
     /*medium screens - Laptops*/
     @media screen and (max-width: 1024px) {
         .wel{
-            background-image:url("https://spaces.w3schools.com/images/f4RBYsY2hxA_400_320.jpg");
+            background-image:url
             height: 500px;
             background-position: center;
         }
@@ -308,7 +309,7 @@
     /*Small screens - tablets*/
     @media screen and (max-width: 768px) {
         .wel{
-            background-image:url("https://spaces.w3schools.com/images/f4RBYsY2hxA_600_400.jpg");
+            /*background-image:url('../Images/Asiangame1.jpg');*/
             height: 600px;
             background-position: center;
         }
@@ -324,6 +325,7 @@
         }
         .about-text{
             background-color: rgba(14, 203, 217, 0.5);
+            padding: 28px ;
             
         }
         .card{
@@ -340,8 +342,7 @@
     /*Extra small screens - phones*/
     @media screen and (max-width: 480px) {
         .wel{
-            background-image:url("https://spaces.w3schools.com/images/f4RBYsY2hxA_600_400.jpg");
-            height: 500px;
+            
             background-position: center;
             
     
@@ -353,7 +354,11 @@
             font-size: 40px;
         }
         .about-text{
-            background-color: rgba(254, 137, 19, 0.3);
+            background-color: rgb(230, 147, 4);
+            padding: 8px ;
+            width:180px;
+            height: 400px;
+            color: #000000;
             
         }
         .title{
@@ -409,7 +414,7 @@
             font-size: 13px;
         }
     
-    /*This is about the Vertical Navigation*/
+    /*This is the Vertical Navigation*/
     }
     .toggle-button {
         background-color: transparent;
