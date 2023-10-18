@@ -83,7 +83,16 @@
         width:300px;
         height: 400px;
         color: #000000;
-        
+    }
+    .about-text + h5{
+        text-align: right;
+        color: #1ab5cd;
+    }
+    .about img{
+        width: 30px;
+        height: 30px;
+        align-items: center;
+
     }
     .icons{
         font-size: 20px;
