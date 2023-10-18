@@ -102,6 +102,10 @@
         margin-right: 10px;
         background-color: #d0e5ec;
     }
+    .about-text h6:hover{
+        background-color: #1ab5cd;
+        color: #ffffff;
+    }
     .about-text a{
         text-decoration: none;
         color: #070606;
@@ -115,8 +119,7 @@
         width: 30px;
         height: 30px;
         align-items: center;
-        float: right;
-
+        float: right;   
     }
     .icons{
         font-size: 20px;
