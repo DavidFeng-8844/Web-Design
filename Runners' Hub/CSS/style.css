@@ -331,8 +331,7 @@
     /*medium screens - Laptops*/
     @media screen and (max-width: 1024px) {
         .wel{
-            background-image:url
-            background-height: 500px;
+            height: 500px;
             background-position: center;
         }
         .wel-text{
