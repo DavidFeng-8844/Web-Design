@@ -1,95 +1,75 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(253, 251, 248);
-    margin: 0;
-    padding: 0;
+.slider-container {
+  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-.toggle-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    left: 120px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 20px;
-    width: 30px;
-    padding: 5px;
+.slider {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
 }
 
-.hamburger {
-    background-color: #333;
-    height: 4px;
-    width: 30px;
-    margin: 2px 0;
-    border-radius: 2px;
-    transition: transform 0.3s;
+.slide {
+  flex: 0 0 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-#nav-toggle {
-    display: none;
+img {
+  width: 100%;
+  height: auto;
 }
 
-#nav-toggle:checked + .toggle-button .hamburger:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+p {
+  margin: 10px 0;
 }
 
-#nav-toggle:checked + .toggle-button .hamburger:nth-child(2) {
-    opacity: 0;
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #8394a6;
 }
 
-#nav-toggle:checked + .toggle-button .hamburger:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+.prev {
+  left: 10px;
 }
 
-.vertical-nav {
-    width: 0px;
-    background-color: #1ab5cd;
-    color: #fbf9fc;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    overflow-x: hidden;
-    transition: width 0.3s;
+.next {
+  right: 10px;
 }
 
-.vertical-nav ul {
-    list-style-type: none;
-    margin: 10;
-    padding: 10;
-    width: 60px;
+input[type="radio"] {
+  display: none;
 }
 
-.vertical-nav li {
-    display: block;
-    padding: 15px;
+label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #333;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
 }
 
-.vertical-nav li:hover {
-    background-color: #1ab5cd;
+.prev,
+.next,
+label {
+  z-index: 1;
 }
 
-.vertical-nav a {
-    text-decoration: none;
-    color: #0c0c0c;
-    display: block;
+input[type="radio"]:checked + .slider {
+  transform: translateX(-33.33%);
 }
 
-#nav-toggle:checked ~.vertical-nav {
-    width: 200px;
-    background-color: #1ab5cd;
-    color: #fbf9fc;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    overflow-x: hidden;
-    transition: width 0.3s;
+.prev:hover,
+.next:hover {
+  color: #007bff;
 }
-
-
