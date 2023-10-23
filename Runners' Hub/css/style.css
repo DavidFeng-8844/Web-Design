@@ -19,9 +19,127 @@
     section{
         margin-top: 0px;
     }
+
+        /*This is the Vertical Navigation bar*/
+    .toggle-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 120px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+        width: 30px;
+        padding: 5px;
+    }
+    
+    .hamburger {
+        background-color: #e8e5e5;
+        height: 4px;
+        width: 40px;
+        margin-left: 0px;
+        border-radius: 2;
+        transition: transform 0.3s;
+    }
+    
+    #nav-toggle {
+        display: none;
+    }
+    
+    #nav-toggle:checked + .toggle-button .hamburger:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    #nav-toggle:checked + .toggle-button .hamburger:nth-child(2) {
+        opacity: 0;
+    }
+    
+    #nav-toggle:checked + .toggle-button .hamburger:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    
+    .vertical-nav {
+        width: 0px;
+        background-color: #1ab5cd;
+        color: #fbf9fc;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        overflow-x: hidden;
+        transition: width 0.3s;
+    }
+    
+    .vertical-nav ul {
+        list-style-type: none;
+        margin: 10;
+        padding: 10;
+        width: 60px;
+    }
+    
+    .vertical-nav li {
+        display: block;
+        padding: 15px;
+    }
+    
+    .vertical-nav li:hover {
+        background-color: #1ab5cd;
+    }
+    
+    .vertical-nav a {
+        text-decoration: none;
+        color: #0c0c0c;
+        display: block;
+    }
+    
+    #nav-toggle:checked ~.vertical-nav {
+        width: 200px;
+    }
+    /*Vertical Navagation ends here*/
+    
+
+    /* Style for the navigation bar */
+    .Navbar {
+        background-color: #121111; /* Background color */
+        overflow: hidden;
+        padding-left: 108px;
+    }
+  
+    /* Style for the links in the navigation bar */
+    .Navbar a {
+        float: left; /* Float the links to the left to create a horizontal layout */
+        display: block; /* Display the links as blocks for better styling */
+        color: #fff; /* Text color */
+        text-align: center; /* Center-align the text */
+        padding: 24px 16px 28px 16px; /* Add some padding to the links for spacing */
+        text-decoration: none; /* Remove underlines from links */
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+    }
+  
+    /* Change the link color on hover */
+    .Navbar a:hover {
+      background-color: #ddd; /* Background color on hover */
+      color: #1ab5cd; /* Text color on hover */
+    }
+    
+    /* Style for the top bar */
+    .Top-bar {
+      text-align:center; /* Center-align the links within the top bar */
+      /*padding: 10px 16px; Add some padding */
+      margin:0px 0px 0px 0px;
+    }
+    
+    /* Add some margin to the top bar for spacing */
+    .Top-bar a {
+      margin: 50px 0px 0px 0px;
+    }
     
     .wel{
-        /*background-image:url('../Images/Asiangame1.jpg');*/
         background-repeat: no-repeat;
     }
     
@@ -361,7 +479,10 @@
             text-align: center;
         }
         h1{
-            font-size: 60px;
+            font-size: 40px;
+        }
+        .wel-text h3{
+            font-size: 30px;
         }
         .about{
             overflow: hidden;
@@ -393,7 +514,7 @@
     
         }
         .wel-text{
-            height: 500px;
+            height: 400px;
         }
         h1{
             font-size: 40px;
@@ -466,124 +587,3 @@
         }.contact-list p{
             font-size: 13px;
         }
-    
-    /*This is the Vertical Navigation*/
-    }
-    .toggle-button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        position: absolute;
-        top: 20px;
-        left: 120px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 20px;
-        width: 30px;
-        padding: 5px;
-    }
-    
-    .hamburger {
-        background-color: #e8e5e5;
-        height: 4px;
-        width: 40px;
-        margin-left: 0px;
-        border-radius: 2;
-        transition: transform 0.3s;
-    }
-    
-    #nav-toggle {
-        display: none;
-    }
-    
-    #nav-toggle:checked + .toggle-button .hamburger:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    
-    #nav-toggle:checked + .toggle-button .hamburger:nth-child(2) {
-        opacity: 0;
-    }
-    
-    #nav-toggle:checked + .toggle-button .hamburger:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-    }
-    
-    .vertical-nav {
-        width: 0px;
-        background-color: #1ab5cd;
-        color: #fbf9fc;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        overflow-x: hidden;
-        transition: width 0.3s;
-    }
-    
-    .vertical-nav ul {
-        list-style-type: none;
-        margin: 10;
-        padding: 10;
-        width: 60px;
-    }
-    
-    .vertical-nav li {
-        display: block;
-        padding: 15px;
-    }
-    
-    .vertical-nav li:hover {
-        background-color: #1ab5cd;
-    }
-    
-    .vertical-nav a {
-        text-decoration: none;
-        color: #0c0c0c;
-        display: block;
-    }
-    
-    #nav-toggle:checked ~.vertical-nav {
-        width: 200px;
-    }
-    /*Vertical Navagation ends here*/
-    
-
-    /* Style for the navigation bar */
-.Navbar {
-    background-color: #121111; /* Background color */
-    overflow: hidden;
-    padding-left: 108px;
-  }
-  
-  /* Style for the links in the navigation bar */
-  .Navbar a {
-    float: left; /* Float the links to the left to create a horizontal layout */
-    display: block; /* Display the links as blocks for better styling */
-    color: #fff; /* Text color */
-    text-align: center; /* Center-align the text */
-    padding: 24px 16px 28px 16px; /* Add some padding to the links for spacing */
-    text-decoration: none; /* Remove underlines from links */
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-  }
-  
-  /* Change the link color on hover */
-  .Navbar a:hover {
-    background-color: #ddd; /* Background color on hover */
-    color: #333; /* Text color on hover */
-  }
-  
-  /* Style for the top bar */
-  .Top-bar {
-    text-align:center; /* Center-align the links within the top bar */
-    /*padding: 10px 16px; Add some padding */
-    margin:0px 0px 0px 0px;
-  }
-  
-  /* Add some margin to the top bar for spacing */
-  .Top-bar a {
-    margin: 50px 0px 0px 0px;
-  }
-  
