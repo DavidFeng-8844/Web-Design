@@ -584,6 +584,8 @@
             padding:20px;
             border-radius: 10px;
     
-        }.contact-list p{
+        }
+        .contact-list p{
             font-size: 13px;
         }
+    }
