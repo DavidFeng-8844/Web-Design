@@ -19,7 +19,6 @@
     section{
         margin-top: 0px;
     }
-
         /*This is the Vertical Navigation bar*/
     .toggle-button {
         background-color: transparent;
@@ -69,7 +68,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 100%;
+        height: 490px;
         overflow-x: hidden;
         transition: width 0.3s;
     }
@@ -507,11 +506,24 @@
     
     /*Extra small screens - phones*/
     @media screen and (max-width: 480px) {
+
+        .Navbar {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            white-space: nowrap; /* Prevent line breaks */
+            overflow-x: auto; /* Enable horizontal scrolling */
+            display: flex; /* Make items align horizontally */
+        }
+        [class*="nav-"] {
+            flex: 0 0 auto; /* Make items stay at their intrinsic width */
+            padding: 10px; /* Add spacing between items */
+            background-color: #0a0a0a; /* Background color for the list items */
+            margin-right: 10px; /* Add margin between items */
+        }
         .wel{
             
             background-position: center;
-            
-    
         }
         .wel-text{
             height: 400px;
