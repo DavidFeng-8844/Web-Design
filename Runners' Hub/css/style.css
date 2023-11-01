@@ -436,18 +436,35 @@
         justify-content: space-evenly;
         align-items: center;
     }
-        
-    /*.nutrition-intro{
-        background: fixed;
-    }*/
+
+    .nutrition-paragraph li:hover{
+        background-color: #1ab5cd;
+        color: #ffffff;
+    }   
+
+.nutrition-main{
+    margin-top: 0px;
+}
+
+    .nutrition-intro{
+        align-items: flex-start;
+        background-image: url("../content/nutrition/images/Essential-Guide-to-Healthy-Eating-2-1024x643.png");
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        background-position: center;
+        margin-top: 0px;
+        align-items: center;
+        justify-content: center;
+    }
     
     .nutrition-intro-text{
-        height: 600px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
+        background-color: rgb(145, 232, 253); 
+        padding:200px 30px;
+        width: 35%;
+        height: 1000px;
+        color: #000000;
     }
     .nutrition-intro-text h3{
         color: #000000;
