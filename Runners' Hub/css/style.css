@@ -447,11 +447,10 @@
 }
 
     .nutrition-intro{
-        align-items: flex-start;
+        align-items: flex;
         background-image: url("../content/nutrition/images/Essential-Guide-to-Healthy-Eating-2-1024x643.png");
-        background-size: 40%;
-        background-repeat: no-repeat;
         background-size: cover;
+        background-repeat: no-repeat;
         overflow: hidden;
         background-position: center;
         margin-top: 0px;
@@ -651,5 +650,29 @@
         }
         .contact-list p{
             font-size: 13px;
+        }
+        .nutrition-intro{
+            font-size: small;
+            align-items: flex;
+            background-image: url("../content/nutrition/images/Essential-Guide-to-Healthy-Eating-2-1024x643.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-position: center;
+            margin-top: 0px;
+        }
+        .nutrition-intro-text{
+            height: 100px;
+            width: 36%;
+        }
+        .nutrition-intro-text h3{
+            float: inline-start;
+            color: #000000;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin: 0px 0px;
+            padding: 0px 0px;
         }
     }
