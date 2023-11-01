@@ -546,6 +546,24 @@
         display: block;
       }
 
+      .gears-intro {
+        background-image: url("../content/gears/images/vapourfly.jpg");
+        background-attachment: fixed; /* 让背景图像固定 */
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .gears-page{
+        color: #000000;
+        padding: 20px;
+        background-color: #ffffff;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
+      }
     /*MEDIA QUERIES*/
     /*Large screens - Desktop*/
     @media screen and (min-width: 1700px) {
