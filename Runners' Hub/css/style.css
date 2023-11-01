@@ -474,7 +474,8 @@
     }
     .button-container{
         display: grid;
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 4fr; 
+        height: 700px;
     }
     
       /* Style the buttons that are used to open the tab content */
@@ -485,6 +486,7 @@
       }
       
       .button ul {
+        border:3px solid rgb(77, 72, 72);/*Make a border to the buttons*/
         float: left;
         flex-wrap: wrap; /* Allow buttons and content to wrap to the next line */
         list-style: none;
@@ -493,14 +495,14 @@
       }
       
       .button li {
-        width: 90%; /* Make all buttons the same width */      }
+        width: 100%; /* Make all buttons the same width */      }
       
       .button a {
         display: block;
         background-color: #d0dee5;
         color: #030202; 
         padding: 12px 10px;
-        margin-right: 18px;
+        margin-right: 0px;
         text-decoration: none;
         text-align: center;
         text-align: left; /* Float the button container to the left */
@@ -511,7 +513,7 @@
       }
 
       .content-container {
-        text-align: right;
+        text-align: center;
         width: 100%;
         background-color: #f0f0f0;
         color:#000000
@@ -522,6 +524,14 @@
       
       .content {
         display: none;
+      }
+      
+      .content img{
+        position: right;
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        overflow: hidden;
       }
         /* Show content based on the URL fragment (e.g., #food-intakes) */
       .content:target {
