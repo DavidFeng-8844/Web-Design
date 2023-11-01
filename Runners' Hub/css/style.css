@@ -11,7 +11,13 @@
     html {
       scroll-behavior: smooth;
     }
-    
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
     * {
       margin: 0;
       padding: 0;
@@ -421,30 +427,10 @@
     #navDemo a{
         font-size: 12px;
     }
-    
-    .nutrition-paragraph li{
-        list-style: none;
-        color: #010101;
-        padding: 20px;
-        margin: 5px;
-        border: 1px solid #1ab5cd;
-        border-radius: 5px;
-        width: 100px;
-        height: 90px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+
+    .nutrition-main{
+        margin-top: 0px;
     }
-
-    .nutrition-paragraph li:hover{
-        background-color: #1ab5cd;
-        color: #ffffff;
-    }   
-
-.nutrition-main{
-    margin-top: 0px;
-}
 
     .nutrition-intro{
         align-items: flex;
@@ -460,19 +446,87 @@
     
     .nutrition-intro-text{
         background-color: rgb(145, 232, 253); 
-        padding:200px 30px;
+        padding:120px 30px;
         width: 35%;
-        height: 1000px;
+        height: 490px;
         color: #000000;
+        margin: 25px 25px;
+        padding: 10px 20px;
     }
     .nutrition-intro-text h3{
+        text-align:start;
         color: #000000;
         font-size: 40px;
         font-weight: 600;
         letter-spacing: 5px;
         text-transform: uppercase;
-        margin-bottom: 120px;
+        margin: 44px 5px;
+        padding: 10px 10px;
     }
+    .nutrition-part {
+        color:#000000;
+        text-align: center;
+    }
+    .nutrition-part h3{
+        border-top: 5px solid #3fd7e8;
+        padding: 10px 10px;
+        margin: 5px 5px;
+    }
+    .button-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    
+      /* Style the buttons that are used to open the tab content */
+      .button-container {
+        background-color: #e4eaeb;
+        padding: 15px;
+        align-items: flex-start; /* Align buttons to the left */
+      }
+      
+      .button ul {
+        float: left;
+        flex-wrap: wrap; /* Allow buttons and content to wrap to the next line */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .button li {
+        width: 90%; /* Make all buttons the same width */      }
+      
+      .button a {
+        display: block;
+        background-color: #d0dee5;
+        color: #030202; 
+        padding: 12px 10px;
+        margin-right: 18px;
+        text-decoration: none;
+        text-align: center;
+        text-align: left; /* Float the button container to the left */
+      } 
+      
+      .button a:hover {
+        background-color: #09abcf;
+      }
+
+      .content-container {
+        text-align: right;
+        width: 100%;
+        background-color: #f0f0f0;
+        color:#000000
+      }
+      .button{
+        float: left;
+      }
+      
+      .content {
+        display: none;
+      }
+        /* Show content based on the URL fragment (e.g., #food-intakes) */
+      .content:target {
+        display: block;
+      }
 
     /*MEDIA QUERIES*/
     /*Large screens - Desktop*/
@@ -577,10 +631,11 @@
             background-position: center;
         }
         .wel-text{
-            height: 400px;
+            height: 640px;
+            padding-top: 30px;
         }
         h1{
-            font-size: 40px;
+            font-size: 30px;
         }
         .about-text{
             background-color: rgb(145, 232, 253);
@@ -652,6 +707,7 @@
             font-size: 13px;
         }
         .nutrition-intro{
+            height: 300px;
             font-size: small;
             align-items: flex;
             background-image: url("../content/nutrition/images/Essential-Guide-to-Healthy-Eating-2-1024x643.png");
@@ -662,17 +718,21 @@
             margin-top: 0px;
         }
         .nutrition-intro-text{
-            height: 100px;
-            width: 36%;
+            height: 200px;
+            width: 60%;
+            align-items: center;
+            margin: 20px 10px;
+            padding: 20px 4px;
         }
         .nutrition-intro-text h3{
-            float: inline-start;
+            text-align:justify;
+            float: none;
             color: #000000;
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 700;
             letter-spacing: 6px;
             text-transform: uppercase;
-            margin: 0px 0px;
-            padding: 0px 0px;
+            margin: 20px 18px;
+            padding: 0px 4px;
         }
     }
