@@ -437,12 +437,11 @@
         align-items: center;
     }
         
-    .nutrition-intro{
-        background-image: url("/content/nutrition/images/Essential-Guide-to-Healthy-Eating-2-1024x643.png");
-    }
+    /*.nutrition-intro{
+        background: fixed;
+    }*/
     
     .nutrition-intro-text{
-        background-color: #1ab5cd;
         height: 600px;
         display: flex;
         justify-content: center;
@@ -451,12 +450,12 @@
         flex-direction: column;
     }
     .nutrition-intro-text h3{
+        color: #000000;
         font-size: 40px;
         font-weight: 600;
         letter-spacing: 5px;
         text-transform: uppercase;
         margin-bottom: 120px;
-        
     }
 
     /*MEDIA QUERIES*/
