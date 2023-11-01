@@ -183,7 +183,8 @@
         height: 700px;
         background-image: url("../Images/Renshou-HM.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-attachment: fixed;
+        background-size: cover; 
         overflow: hidden;
         background-position: center;
         margin-top: 0px;       
@@ -437,6 +438,7 @@
         background-image: url("../content/nutrition/images/Essential-Guide-to-Healthy-Eating-2-1024x643.png");
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         overflow: hidden;
         background-position: center;
         margin-top: 0px;
@@ -480,6 +482,10 @@
     
       /* Style the buttons that are used to open the tab content */
       .button-container {
+        background-image: url("../content/nutrition/images/nutrition_background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-color: #e4eaeb;
         padding: 15px;
         align-items: flex-start; /* Align buttons to the left */
@@ -524,6 +530,7 @@
       
       .content {
         display: none;
+        height: 500px;
       }
 
       .content p{
@@ -536,8 +543,8 @@
       
       .content img{
         position: right;
-        width: 46%;
-        height: 50%;
+        width: 78%;
+        height: 68%;
         object-fit: cover;
         overflow: hidden;
       }
