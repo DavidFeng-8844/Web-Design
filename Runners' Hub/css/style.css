@@ -66,34 +66,46 @@
     }
     
     .vertical-nav {
+        border: 4px solid #070b0c;
         width: 0px;
         background-color: #1ab5cd;
         color: #fbf9fc;
         position: absolute;
         top: 0;
         left: 0;
-        height: 720px;
+        height: 710px;
         overflow-x: hidden;
         transition: width 0.3s;
     }
     
     .vertical-nav ul {
         list-style-type: none;
-        margin: 10;
+        margin: 80px 20px;
         padding: 10;
-        width: 60px;
+        width: 80px;
+        align-items: center;
+
     }
     
+    .vertical-nav sa:hover {
+        background-color: #94d1db;
+    }
     .vertical-nav li {
+        font-size: larger;
+        text-align: center;
+        border:3px solid #070b0c;
         display: block;
-        padding: 15px;
+        width: 100px;
+        margin: 5px 5px;
     }
     
-    .vertical-nav li:hover {
-        background-color: #1ab5cd;
+    .vertical-nav a:hover {
+        background-color: #c6c7c8;
     }
     
     .vertical-nav a {
+        text-align: center;
+        padding: 30px 40px 40px 15px;
         text-decoration: none;
         color: #0c0c0c;
         display: block;
@@ -478,24 +490,20 @@
         padding: 10px 10px;
         margin: 5px 5px;
     }
-    .button-container{
+    .nutrition-button-container{
         display: grid;
         grid-template-columns: 1fr 4fr; 
         height: 700px;
+        background-image: url("../content/nutrition/images/nutrition_background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: #e4eaeb;
+        padding: 15px;
+        align-items: flex-start; /* Align buttons to the left */
     }
     
-    /* Style the buttons that are used to open the tab content */
-    .button-container {
-      background-image: url("../content/nutrition/images/nutrition_background.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-color: #e4eaeb;
-      padding: 15px;
-      align-items: flex-start; /* Align buttons to the left */
-    }
-    
-    .button ul {
+    .nutrition-button ul {
       border:3px solid rgb(77, 72, 72);/*Make a border to the buttons*/
       float: left;
       flex-wrap: wrap; /* Allow buttons and content to wrap to the next line */
@@ -504,10 +512,10 @@
       margin: 0;
     }
     
-    .button li {
+    .nutrition-button li {
       width: 100%; /* Make all buttons the same width */      }
     
-    .button a {
+    .nutrition-button a {
       display: block;
       background-color: #d0dee5;
       color: #030202; 
@@ -518,39 +526,39 @@
       text-align: left; /* Float the button container to the left */
     } 
     
-    .button a:hover {
+    .nutrition-button a:hover {
       background-color: #09abcf;
     }
-    .content-container {
+    .nutrition-content-container {
       text-align: center;
       width: 100%;
       background-color: #f0f0f0;
       color:#000000
     }
-    .button{
+    .nutrition-button{
       float: left;
     }
     
-    .content {
+    .nutrition-content {
       display: none;
       height: 500px;
     }
-    .content p{
+    .nutrition-content p{
       font-family: Arial, Helvetica, sans-serif;
       font-size: medium;
       text-align: justify;
       padding: 5px 10px;
     }
     
-    .content img{
+    .nutrition-content img{
       position: right;
       width: 78%;
-      height: 68%;
+      height: 75%;
       object-fit: cover;
       overflow: hidden;
     }
       /* Show content based on the URL fragment (e.g., #food-intakes) */
-    .content:target {
+    .nutrition-content:target {
       display: block;
     }
     .gears-intro {
@@ -558,7 +566,7 @@
       background-attachment: fixed;
       background-position: center;
       background-size: cover;
-      height: 100vh;
+      height: 500vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -573,16 +581,19 @@
         width: 100%;
         height: 100%;
     }
-    /*.gears-intro::before {
-        content: "";
-        margin: 10px;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #f0f0f0);
-      }*/
+    div.gears-article h4{ 
+        font-size: 28px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 10px 70px;
+
+    }
+    div.gears-article h6{
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 30px 60px;
+        text-align: justify;
+        line-height: 1.8;
+    }
     .gears-page{
         content: "";
         margin: 10px;
@@ -591,7 +602,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #f0f0f0);
+        background: linear-gradient(to bottom, rgba(24, 173, 218, 0), #23aeca);
         width: 100%;
         height: auto;
         color: #000000;
@@ -604,10 +615,7 @@
         transform: translateY(50px);
         transition: opacity 1s ease, transform 1s ease;  
     }
-    /*.gears-page.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }*/
+
     /* Add a CSS class to reveal the content when scrolling */
 
     /*MEDIA QUERIES*/
@@ -892,4 +900,23 @@
             margin: 20px 18px;
             padding: 0px 4px;
         }
+        .nutrition-button-container{
+            display: grid;
+            grid-template-columns: 1fr 4fr; 
+            height: 1900px;
+            background-image: url("../content/nutrition/images/nutrition_background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #e4eaeb;
+            padding: 15px;
+            align-items: flex-start; /* Align buttons to the left */
+        }
+        .nutrition-content img{
+            position: right;
+            width: 68%;
+            height: 38%;
+            object-fit: cover;
+            overflow: hidden;
+          }
     }
