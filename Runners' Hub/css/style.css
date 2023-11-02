@@ -561,33 +561,41 @@
     .nutrition-content:target {
       display: block;
     }
+    .gears-container{
+        height: 1200px;
+        background-image: url("../content/gears/images/vapourfly.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; 
+        overflow: hidden;
+        background-position: center;
+        margin-top: 0px;   
+    }
+
     .gears-intro {
-      background-image: url("../content/gears/images/vapourfly.jpg");
-      background-attachment: fixed;
-      background-position: center;
-      background-size: cover;
-      height: 500vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /*position: sticky;*/ /* Make it stick, even on scroll */
-      top: 0; 
-      z-index: 1;  
-    }
-    .gears-intro h1{
-        content: "";
-        position:absolute;
-        top: 34.4%;
+        position: static;
+        top: 0%;
+        left: 0%;
         width: 100%;
-        height: 100%;
+        height: 10%;
     }
-    div.gears-article h4{ 
+
+    .gears-intro h1{
+        font-size: 1024%;
+    }
+    .gears-page{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 10%;
+    }
+    .gears-article h4{ 
         font-size: 28px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         padding: 10px 70px;
-
     }
-    div.gears-article h6{
+    .gears-article h6{
         font-size: 18px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         padding: 30px 60px;
@@ -595,7 +603,6 @@
         line-height: 1.8;
     }
     .gears-page{
-        content: "";
         margin: 10px;
         position: absolute;
         top: 120%;
@@ -615,6 +622,29 @@
         transform: translateY(50px);
         transition: opacity 1s ease, transform 1s ease;  
     }
+    
+    .gear-gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Adjust as needed */
+        width: 10%;
+      }
+      
+      .gears-image {
+        transition: transform 0.3s ease;
+      }
+      
+      .gears-image:hover {
+        transform: scale(1.1);
+      }
+      
+      .zoom-checkbox:checked ~ .zoom-label {
+        transform: scale(4);
+      }
+    
+    
+    
 
     /* Add a CSS class to reveal the content when scrolling */
 
@@ -803,7 +833,7 @@
         .about-text a:hover{
             color: #40b5dc;
         }
-        .title{
+        .about .title{
         font-size: 30px; 
         padding:30px 10px;  
         
@@ -813,7 +843,7 @@
         }
         .about{
             background-image: url("../Images/Renshou-HM1.jpg");
-            height: 500px;;
+            height: 700px;
             overflow: hidden;
             background-position-x:left ;
         
@@ -918,5 +948,5 @@
             height: 38%;
             object-fit: cover;
             overflow: hidden;
-          }
+        }
     }
