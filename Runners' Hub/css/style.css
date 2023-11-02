@@ -6,8 +6,6 @@
     
     /*Extra Large screens - Extra large desktops*/
     
-    /*General CSS and CSS reset*/
-    
     html {
       scroll-behavior: smooth;
     }
@@ -317,8 +315,12 @@
         width:70%;
         margin: auto;
         justify-content: space-evenly;
-        margin-top: 50px;
-        
+        margin-top: 0px;
+        margin-bottom: 150px;
+        transition: transform 0.44s ease; /* Add a smooth transition for scaling */   
+    }
+    .training-main:hover{
+        transform: scale(1.24); /* Add scale on hover */
     }
     .training-image{
         width:300px;
@@ -405,7 +407,8 @@
     
     }
     .contact-address{
-        padding-bottom: 150px;
+        padding-bottom: 44px;
+        margin-bottom: 0px;
         background-color: #0a0c0f;;
         overflow: hidden;
     
@@ -422,6 +425,7 @@
     .contact-list{
         margin: 20px 0px !important;
     }
+
     h4{
         text-transform: uppercase;
     }
@@ -480,97 +484,132 @@
         height: 700px;
     }
     
-      /* Style the buttons that are used to open the tab content */
-      .button-container {
-        background-image: url("../content/nutrition/images/nutrition_background.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-color: #e4eaeb;
-        padding: 15px;
-        align-items: flex-start; /* Align buttons to the left */
-      }
-      
-      .button ul {
-        border:3px solid rgb(77, 72, 72);/*Make a border to the buttons*/
-        float: left;
-        flex-wrap: wrap; /* Allow buttons and content to wrap to the next line */
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      
-      .button li {
-        width: 100%; /* Make all buttons the same width */      }
-      
-      .button a {
-        display: block;
-        background-color: #d0dee5;
-        color: #030202; 
-        padding: 12px 10px;
-        margin-right: 0px;
-        text-decoration: none;
-        text-align: center;
-        text-align: left; /* Float the button container to the left */
-      } 
-      
-      .button a:hover {
-        background-color: #09abcf;
-      }
-
-      .content-container {
-        text-align: center;
+    /* Style the buttons that are used to open the tab content */
+    .button-container {
+      background-image: url("../content/nutrition/images/nutrition_background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #e4eaeb;
+      padding: 15px;
+      align-items: flex-start; /* Align buttons to the left */
+    }
+    
+    .button ul {
+      border:3px solid rgb(77, 72, 72);/*Make a border to the buttons*/
+      float: left;
+      flex-wrap: wrap; /* Allow buttons and content to wrap to the next line */
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .button li {
+      width: 100%; /* Make all buttons the same width */      }
+    
+    .button a {
+      display: block;
+      background-color: #d0dee5;
+      color: #030202; 
+      padding: 12px 10px;
+      margin-right: 0px;
+      text-decoration: none;
+      text-align: center;
+      text-align: left; /* Float the button container to the left */
+    } 
+    
+    .button a:hover {
+      background-color: #09abcf;
+    }
+    .content-container {
+      text-align: center;
+      width: 100%;
+      background-color: #f0f0f0;
+      color:#000000
+    }
+    .button{
+      float: left;
+    }
+    
+    .content {
+      display: none;
+      height: 500px;
+    }
+    .content p{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: medium;
+      text-align: justify;
+      padding: 5px 10px;
+    }
+    
+    .content img{
+      position: right;
+      width: 78%;
+      height: 68%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+      /* Show content based on the URL fragment (e.g., #food-intakes) */
+    .content:target {
+      display: block;
+    }
+    .gears-intro {
+      background-image: url("../content/gears/images/vapourfly.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /*position: sticky;*/ /* Make it stick, even on scroll */
+      top: 0; 
+      z-index: 1;  
+    }
+    .gears-intro h1{
+        content: "";
+        position:absolute;
+        top: 34.4%;
         width: 100%;
-        background-color: #f0f0f0;
-        color:#000000
-      }
-      .button{
-        float: left;
-      }
-      
-      .content {
-        display: none;
-        height: 500px;
-      }
-
-      .content p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: medium;
-        text-align: justify;
-        padding: 5px 10px;
-
-      }
-      
-      .content img{
-        position: right;
-        width: 78%;
-        height: 68%;
-        object-fit: cover;
-        overflow: hidden;
-      }
-        /* Show content based on the URL fragment (e.g., #food-intakes) */
-      .content:target {
-        display: block;
-      }
-
-      .gears-intro {
-        background-image: url("../content/gears/images/vapourfly.jpg");
-        background-attachment: fixed; /* 让背景图像固定 */
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .gears-page{
+        height: 100%;
+    }
+    /*.gears-intro::before {
+        content: "";
+        margin: 10px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #f0f0f0);
+      }*/
+    .gears-page{
+        content: "";
+        margin: 10px;
+        position: absolute;
+        top: 120%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #f0f0f0);
+        width: 100%;
+        height: auto;
         color: #000000;
         padding: 20px;
         background-color: #ffffff;
-        margin: 20px;
+        margin: 0px;
         border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
-      }
+        /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/    
+        opacity: 1;
+        transform: translateY(50px);
+        transition: opacity 1s ease, transform 1s ease;  
+    }
+    /*.gears-page.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }*/
+    /* Add a CSS class to reveal the content when scrolling */
+
     /*MEDIA QUERIES*/
     /*Large screens - Desktop*/
     @media screen and (min-width: 1700px) {
@@ -590,9 +629,12 @@
             justify-content: space-evenly;
        }
        .contact-address-list{
-           
            margin: auto;
            width: 70%;
+           align-items: flex-start;
+       }
+       .contact-list{
+           width: 50%;
        }
     }
     
@@ -680,13 +722,78 @@
         h1{
             font-size: 30px;
         }
+        .about h2{
+            color:rgb(243, 239, 239);
+            text-shadow: 8px 10px 10px #010101;
+            border-top:none;
+            border-bottom: none;
+            padding: 60px 70px;
+            margin-left: 40px;
+            text-transform: uppercase;
+            font-size: 54px;
+            font-weight: 800;
+            text-align: left;
+        }
         .about-text{
             background-color: rgb(145, 232, 253);
             padding: 8px ;
-            width:300px;
-            height: 400px;
+            width: 250px;
+            height: 300px;
             color: #000000;
+            padding: 0px 50px 0px 50px;
             
+        }
+        .about .title h2    {
+            color:rgb(247, 246, 246);
+            text-shadow: 8px 10px 10px #010101;
+            border-top:none;
+            border-bottom: none;
+            padding: 10px 50px 0px 0px;
+            margin-left: 20px;
+            text-transform: uppercase;
+            font-size: 34px;
+            font-weight: 800;
+            text-align: left;
+        }
+        .about-text h3{
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            color: #0b0b0b;
+            border-bottom: 3px solid #1ab5cd;
+            padding-bottom: 10px;
+            margin-bottom: 0px;
+        }
+        .about-text h5{
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            color: #1ab5cd;
+            border-bottom: 3px solid #1ab5cd;
+            padding-bottom: 10px;
+            margin-bottom: 0px;
+        }
+        .about-text h6{
+            text-align: left;
+            color: #070808;
+            padding: 15px 15px;
+            font-size: large;
+            border-left: #1ab5cd 14px solid;
+            margin-right: 10px;
+            background-color: #d0e5ec;
+        }
+        .about-text h6:hover{
+            background-color: #1ab5cd;
+            color: #ffffff;
+        }
+        .about-text a{
+            text-decoration: none;
+            color: #070606;
+            font-size: large;
+            padding-left: 5px;
+        }
+        .about-text a:hover{
+            color: #40b5dc;
         }
         .title{
         font-size: 30px; 
@@ -697,6 +804,7 @@
             font-size: 25px;
         }
         .about{
+            background-image: url("../Images/Renshou-HM1.jpg");
             height: 500px;;
             overflow: hidden;
             background-position-x:left ;
@@ -710,6 +818,12 @@
         }
         .training-main{
             justify-content: center;
+            margin-bottom: 10px;
+            padding-bottom: 0px;        
+            transition: transform 0.44s ease; /* Add a smooth transition for scaling */   
+        }
+            .training-main:hover{
+            transform: scale(1.12); /* Add scale on hover */
         }
         .training-text{
             width: 80%;
