@@ -565,6 +565,7 @@
     /*Gears page*/
 
     .gears-container{  
+        position: static;
         font-size: small;
         align-items: center;
         background-image: url("../content/gears/images/vapourfly.jpg");
@@ -576,6 +577,7 @@
     }
 
     .gears-intro h1{
+        color:#bddff0;
         padding-top: 12%;
         font-size: 1024%;
     }
@@ -595,8 +597,8 @@
     }
 
     .gears-page{
+        position: static;
         margin: 10px 0px;
-        position: relative;
         top: 120%;
         left: 0;
         width: 100%;
@@ -617,6 +619,14 @@
         align-items: center;
         height: 60vh; /* Adjust as needed */
         width: 100%;
+    }
+
+    .gears-caption{
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 10px 10px;
+        text-align: center;
+        line-height: 1.8;
     }
 
     .gears-image {
@@ -687,6 +697,90 @@
     /* show the gears-overlay */
     .gears-show:target {
         display: flex;
+    }
+
+
+    /*events page*/
+
+    .events-container{
+        display: grid;
+        grid-template-rows: 3fr 4fr;
+        gap: 10px;
+        padding: 10px;
+        font-size: small;
+        align-items: center;
+        background-image: url("../content/events/eventPics/elite-runners1.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; 
+        overflow: hidden;
+        background-position: center;
+    }
+
+    .events-intro {
+        position: static;
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+        align-items: center;
+        color: #f1f1f1;
+        width: 100%;
+        padding: 0px 0px;
+        text-align: center;
+        font-size: 20px;    
+    }
+
+    .events-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .events-gallery {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+    }
+    
+    .gallery-selector {
+        display: none;
+    }
+    
+    .gallery-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s;
+        background-size: cover; /* Adjust as needed */
+        background-position: center; /* Adjust as needed */
+    }
+    
+    .gallery-label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 5px 15px;
+        border-radius: 50%;
+    }
+    
+    .next {
+        right: 0;
+    }
+    
+    .prev {
+        left: 0;
+    }
+    
+    #img1:checked ~ #gallery-img1,
+    #img2:checked ~ #gallery-img2,
+    #img3:checked ~ #gallery-img3 {
+        opacity: 1;
     }
     
     
