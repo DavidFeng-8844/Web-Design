@@ -585,6 +585,7 @@
     }
 
     .gears-intro h1{
+        padding-top: 12%;
         font-size: 1024%;
     }
     .gears-page{
@@ -628,10 +629,11 @@
     }
     
     .gear-gallery {
+        margin: 30px 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh; /* Adjust as needed */
+        height: 60vh; /* Adjust as needed */
         width: 100%;
     }
 
@@ -640,10 +642,7 @@
         height: 100%;
         object-fit: cover;
         overflow: hidden;
-    }
-      
-    .gears-image {
-      transition: transform 0.3s ease;
+        transition: transform 0.3s ease;
     }
     
     .gears-image:hover {
@@ -653,11 +652,10 @@
     /*The gears show divison*/
     .gears-overlay {
         display: none;
-        position: fixed;
+        position: relative;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
         background: rgba(0, 0, 0, 0.5);
         z-index: 1;
         display: flex;
@@ -666,24 +664,33 @@
     }
     
     .gears-show {
+        display: grid;
+        grid-template-columns: 10fr 1fr;
+        text-align: justify;
+        position:relative;
+        display:none;
+        width: 100%;
+        overflow:hidden;
         background: white;
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        text-align: center;
     }
     
     .gears-close-button {
         position: relative;
+        height: 28px;
         background: red;
         color: white;
-        padding: 5px 10px;
+        padding: 5px 5px;
         border-radius: 5px;
+        margin: 10px;
         cursor: pointer;
     }
     
     .gears-show-button {
-        padding: 10px 20px;
+        
+        padding: 10px 44px;
         background: #0077FF;
         color: white;
         border-radius: 5px;
@@ -700,12 +707,6 @@
         display: flex;
     }
     
-    /* Close the gears-overlay when the "Close" link is clicked */
-    .gears-close-button {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
     
     
     
@@ -965,6 +966,10 @@
         .contact-list p{
             font-size: 13px;
         }
+
+
+        /*Nutrition page*/
+
         .nutrition-intro{
             height: 300px;
             font-size: small;
@@ -1013,9 +1018,23 @@
             object-fit: cover;
             overflow: hidden;
         }
+
+        .gears-container{
+            position: relative;
+        }
+        .gears-intro{
+            position: relative;
+            margin-bottom: 0px;
+        }
+
         .gears-intro h1{
+            padding-top: 32%;
             font-size: 324%;
         }
+
+        .gears-page{
+            margin-top: 0px;
+        }	
         .gears-container{
             height: 900px;
         }
