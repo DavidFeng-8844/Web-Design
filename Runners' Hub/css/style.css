@@ -649,16 +649,9 @@
     .gears-image:hover {
       transform: scale(1.1);
     }
-    
-    .zoom-checkbox:checked ~ .zoom-label {
-      transform: scale(4);
-    }
 
-    .gears-toggle {
-        display: none;
-    }
-    
-    .gears-show {
+    /*The gears show divison*/
+    .gears-overlay {
         display: none;
         position: fixed;
         top: 0;
@@ -667,12 +660,12 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         z-index: 1;
+        display: flex;
         justify-content: center;
         align-items: center;
-        display: flex;
     }
     
-    .gears {
+    .gears-show {
         background: white;
         padding: 20px;
         border-radius: 5px;
@@ -680,7 +673,8 @@
         text-align: center;
     }
     
-    .close-button {
+    .gears-close-button {
+        position: relative;
         background: red;
         color: white;
         padding: 5px 10px;
@@ -688,7 +682,7 @@
         cursor: pointer;
     }
     
-    .show-button {
+    .gears-show-button {
         padding: 10px 20px;
         background: #0077FF;
         color: white;
@@ -696,17 +690,23 @@
         cursor: pointer;
     }
     
-    /* When the checkbox is checked, show the gears-show */
-    .gears-toggle:checked + .gears-show {
-        display: flex;
-    }
-
-    /*When the Close button is clicked, close the gears-show */
-    .close-button:hover {
-        background: #FF0000;
+    .gears-show-button:hover {
+        text-decoration: none;
     }
     
-
+    
+    /* When the URL contains #gears-show, show the gears-overlay */
+    .gears-show:target {
+        display: flex;
+    }
+    
+    /* Close the gears-overlay when the "Close" link is clicked */
+    .gears-close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
     
     
 
