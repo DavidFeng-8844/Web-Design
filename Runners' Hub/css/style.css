@@ -198,6 +198,7 @@
         background-position: center;
         margin-top: 0px;       
     }
+
     .about h2{
         color:rgb(243, 239, 239);
         text-shadow: 8px 10px 10px #010101;
@@ -210,6 +211,7 @@
         font-weight: 800;
         text-align: left;
     }
+
     .about-text{
         background-color: rgb(145, 232, 253);
         padding: 28px ;
@@ -217,6 +219,7 @@
         height: 400px;
         color: #000000;
     }
+
     .about-text h5{
         font-size: large;
         font-family: 'Courier New', Courier, monospace;
@@ -226,6 +229,7 @@
         padding-bottom: 10px;
         margin-bottom: 0px;
     }
+
     .about-text h6{
         text-align: left;
         color: #070808;
@@ -235,30 +239,121 @@
         margin-right: 10px;
         background-color: #d0e5ec;
     }
+
     .about-text h6:hover{
         background-color: #1ab5cd;
         color: #ffffff;
     }
+
     .about-text a{
         text-decoration: none;
         color: #070606;
         font-size: large;
         padding-left: 5px;
     }
+
     .about-text a:hover{
         color: #40b5dc;
     }
+
     .about img{
         width: 30px;
         height: 30px;
         align-items: center;
         float: right;   
     }
+
+    .table-container{
+        position: relative;
+        height: 200px;
+    }
+
+    /*table start*/ 
+    
+        /*about button start here*/
+        .about-button-container{
+            display: grid;
+            grid-template-columns: 1fr 4fr; 
+            height: 700px;
+            background-image: url("../content/about/images/about_background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #e4eaeb;
+            padding: 15px;
+            align-items: flex-start; /* Align buttons to the left */
+        }
+        
+        .about-button ul {
+          border:3px solid rgb(77, 72, 72);/*Make a border to the buttons*/
+          float: left;
+          flex-wrap: wrap; /* Allow buttons and content to wrap to the next line */
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        
+        .about-button li {
+          width: 100%; /* Make all buttons the same width */      }
+        
+        .about-button a {
+          display: block;
+          background-color: #d0dee5;
+          color: #030202; 
+          padding: 12px 10px;
+          margin-right: 0px;
+          text-decoration: none;
+          text-align: center;
+          text-align: left; /* Float the button container to the left */
+        } 
+        
+        .about-button a:hover {
+          background-color: #09abcf;
+        }
+        .about-content-container {
+          text-align: center;
+          width: 100%;
+          background-color: #f0f0f0;
+          color:#000000
+        }
+        .about-button{
+          float: left;
+        }
+        
+        .about-content {
+          display: none;
+          height: 500px;
+        }
+        .about-content p{
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: medium;
+          text-align: justify;
+          padding: 5px 10px;
+        }
+        
+        .about-content img{
+          position: right;
+          width: 78%;
+          height: 75%;
+          object-fit: cover;
+          overflow: hidden;
+        }
+    
+        .about-content:target {
+          display: block;
+        }
+    
+        /*about buttons ends here*/
+
+    
+    /*table end here*/
+
     .icons{
         font-size: 20px;
         letter-spacing: 5px;
     
     }
+
     .title{
         color:white;
         width:100%;
@@ -269,7 +364,6 @@
         margin-left: 10%;
         text-transform: uppercase;
         width: 80%; 
-        
     }
 
     
@@ -284,41 +378,14 @@
         background-color: black;
         overflow: hidden;
     }
-    .card{
-        width:80%;
-        display:flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        margin: auto;
-        overflow: hidden;
-    }
-    .card-list{
-        width:300px;
-        margin-top: 50px;
-        overflow: hidden;
-    
-    }
-    
-    .card-image{
-        width:100%;
-        height: 400px;
-    
-    }
-    .card-image img{
-        width:100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .card-text{
-        width:90%;
-        
-    }
+
     .training{
         padding-bottom: 150px;
         background-color: #0a0c0f;;
         overflow: hidden;
     
     }
+
     .training-main{
         display: flex;
         flex-wrap: wrap;
@@ -330,38 +397,62 @@
         margin-bottom: 150px;
         transition: transform 0.44s ease; /* Add a smooth transition for scaling */   
     }
+
     .training-main:hover{
         transform: scale(1.24); /* Add scale on hover */
     }
+
     .training-image{
         width:300px;
         height: 400px;
         margin-left: 40px;
     }
+
     .training-image a{
         text-decoration: none;
         color: #ffffff;
         font-size: large;
         padding-left: 5px;
     }
+
     .training-image a:hover{
         color: #1ab5cd;
     }
+
     .training-image img{
         width: 100%;
         height: 100%;
         object-fit: cover;
         
     }
+
     .training-text{
         width: 40%;
     
     }
+
+    .training-button {
+        margin-right: 20%;
+        float: right;
+        background-color: white;
+        color: black; 
+        border: 2px solid black; 
+        padding: 10px 20px;
+        font-size: 16px; 
+        cursor: pointer;
+        text-decoration: none;
+      }
+      
+      .training-button:hover {
+        background-color: lightgray; /* Change background color on hover */
+      }
+
     .contact{
         
-        background-color: #242526;
+        background-color: #000000;
         padding-bottom: 150px;
     }
+
     .contact-image{
         
         width:500px;
@@ -372,60 +463,61 @@
         height: 100%;
         object-fit: contain;
     }
+
     .contact-main{
         display: flex;
         flex-wrap: wrap-reverse;
         justify-content: center;
     }
+
     .contact-form{
         background-color: #eee;
         padding:30px;
     }
-    .input:focus,
-    textarea:focus{
+    
+    .input:focus,textarea:focus{
       outline: 1.5px solid gray;
     }
     
-    .input,
-    textarea {
+    .input,textarea {
       width: 100%;
       border: 1px solid #bdbdbd;
       border-radius: 5px;
     }
+
     form{
-        
-    
         display: flex;
         flex-direction: column;
     }
+
     .input{
         padding:10px !important;
         margin: 10px 0px;
         height: 45px;
         border:1px solid ;
     }
+
     textarea{
         height: 70px !important;
     }
+
     .name{
         display: flex;
-        justify-content: space-between;
-        
+        justify-content: space-between;    
     }
+
     .name-list
     {
         width:48%;
-    
     }
+
     .contact-address{
         padding-bottom: 44px;
         margin-bottom: 0px;
         background-color: #0a0c0f;;
-        overflow: hidden;
-    
-    
-    
+        overflow: hidden;    
     }
+
     .contact-address-list{
         display: flex;
         background-color: #0a0c0f;;
@@ -433,6 +525,7 @@
         flex-wrap: wrap;
         
     }
+
     .contact-list{
         margin: 20px 0px !important;
     }
@@ -490,6 +583,8 @@
         padding: 10px 10px;
         margin: 5px 5px;
     }
+
+    /*nutrition button start here*/
     .nutrition-button-container{
         display: grid;
         grid-template-columns: 1fr 4fr; 
@@ -557,10 +652,12 @@
       object-fit: cover;
       overflow: hidden;
     }
-      /* Show content based on the URL fragment */
+
     .nutrition-content:target {
       display: block;
     }
+
+    /*nutrition buttons ends here*/
 
     /*Gears page*/
 
@@ -1015,9 +1112,11 @@
         padding:30px 10px;  
         
         }
+
         h3{
             font-size: 25px;
         }
+
         .about{
             background-image: url("../Images/Renshou-HM1.jpg");
             height: 700px;
@@ -1025,29 +1124,36 @@
             background-position-x:left ;
         
         }
+
         .card{
             width: 100%;;
         }
+        
         .card-list{
             width: 300px;
         }
+
         .training-main{
             justify-content: center;
             margin-bottom: 10px;
             padding-bottom: 0px;        
             transition: transform 0.44s ease; /* Add a smooth transition for scaling */   
         }
+
             .training-main:hover{
             transform: scale(1.12); /* Add scale on hover */
         }
+
         .training-text{
             width: 80%;
         }
+
         .training-image{
             margin: 50px 3px;
             width:300px;
             padding: 5px 5px;
         }
+
         .training-image h6{
             text-decoration: none;
             color: #090707;
@@ -1055,19 +1161,24 @@
             text-align: center;
      
         }
+
         .contact-main{
         width: 90%;
         margin:auto;    
         }
+
         .name{
             flex-direction: column;
         }
+        
         .name-list{
             width: 100%;
         }
+
         .contact-form{
             width: 100%;
         }
+
         .contact-list{
             width:80%;
             border:1px solid rgb(77, 72, 72);
@@ -1075,6 +1186,7 @@
             border-radius: 10px;
     
         }
+
         .contact-list p{
             font-size: 13px;
         }
