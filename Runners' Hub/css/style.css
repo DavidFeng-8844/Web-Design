@@ -729,7 +729,8 @@
     }
     
     .gear-gallery { 
-        display: flex;
+        display: grid;
+        position: relative;
         justify-content: center;
         align-items: center;
         height: 60vh; /* Adjust as needed */
@@ -755,6 +756,19 @@
         text-align: center;
         padding-right: 27vh;
     }
+
+    .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    video {
+        height: 52vh;
+        width: 55vh;
+    }
+    
 
     /*The gears show divison*/
     .gears-overlay {
