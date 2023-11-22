@@ -3,7 +3,7 @@ const getUserChoice = userInput => {
     if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') {
       return userInput;
     } else {
-      console.log('Error!');
+      console.log('Error!');    
     }
   };
   
