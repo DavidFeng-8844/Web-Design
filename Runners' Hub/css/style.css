@@ -140,6 +140,14 @@
       background-color: #ddd; /* Background color on hover */
       color: #1ab5cd; /* Text color on hover */
     }
+
+    .new-icon {
+        width: 35px; 
+        height: 18px; 
+        margin-left: 6px;
+        margin-bottom: 0px;
+        height: 100%;
+    }
     
     /* Style for the top bar */
     .Top-bar {

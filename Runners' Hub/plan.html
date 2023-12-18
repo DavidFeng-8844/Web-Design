@@ -1,0 +1,113 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css">  
+        <meta charset="UTF-8">
+        <title>Runner's Hub About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-TY27fdpHqn8Yj0X6zu5K7ZRr8bABv3MqSStqL4yZw7IWBfS3ro2kdy3+Q/A4QFZd" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    </head>
+    <label>  
+        <!--Vertical Navbar-->
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="toggle-button">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </label>
+        <nav class="vertical-nav">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="plan.html">Plan</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="gears.html">Gears</a></li>
+            <li><a href="events.html">Events</a></li> 
+            </ul>
+        </nav>     
+        <div>
+            <!-- Navbar -->
+            <div class="Navbar">
+                <div class="Top-bar">
+                    <a href="index.html" class="nav-home">HOME</a>
+                    <a href="plan.html" class="nav-plan">PLAN</a>
+                    <a href="about.html" class="nav-about">ABOUT</a>
+                    <a href="training.html" class="nav-training">TRAINING</a>
+                    <a href="nutrition.html" class="nav-nutrition">NUTRITION</a>
+                    <a href="gears.html" class="nav-gears">GEARS</a>
+                    <a href="events.html" class="nav-events">EVENTS</a>
+                </div>
+                </div>
+        </div>
+        </label>
+        <form id="trainingForm">
+            <!-- Your form fields go here -->
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" name="userName" required>
+
+            <label for="planMonth">Month:</label>
+            <select id="planMonth" name="planMonth" required>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>   
+                <option value="11">November</option>
+                <option value="12">December</option>
+
+            </select>
+
+            <label for="planYear">Year:</label>
+            <input type="number" id="planYear" name="planYear" min="2023" value="2023" required>
+
+            <button type="button" onclick="console.log('Button Clicked!'); generateTrainingPlan()">Generate Training Plan PDF</button>
+        </form>
+
+
+        <div class="contact-address" id="contact">
+        <h2 class="title"> __ GET IN TOUCH</h2>
+        <div class="contact-address-list">
+
+            <div class="contact-list">
+            <h4>location</h4>
+            <br>
+            <p>SWJTU,Chengdu,China</p>
+            
+            </div>
+
+            <div class="contact-list">
+            <h4>Opening Hour</h4>
+            <br>
+            <p>9 to 5</p>
+            </div>
+
+            <div class="contact-list">
+            <h4>Say hello</h4>
+            <br>
+            <p>el22y2f@leeds.ac.uk</p>
+            </div>
+
+            <div class="contact-list">
+            <h4>CopyRight</h4>
+            <br>
+            <p>2023 Yujie Feng. All rights reserved.</p>
+            </div>
+
+        </div>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-Q6QZRTOz4k1Z8t1atJEdsG8DQfblRqAd/7cUeJoG9zpLxqHRPh/6I6l3uBHAeBEU" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4Bbh6Bo/GvKjtbfo5v5t4U1BHgNVha5" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        
+    </body>
+    </html>
