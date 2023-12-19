@@ -1,11 +1,11 @@
 /*CSS variables section*/
 :root {
-    
+
     color:white;
     }
-    
+
     /*Extra Large screens - Extra large desktops*/
-    
+
     html {
       scroll-behavior: smooth;
     }
@@ -39,7 +39,7 @@
         width: 30px;
         padding: 5px;
     }
-    
+
     .hamburger {
         background-color: #e8e5e5;
         height: 4px;
@@ -48,23 +48,23 @@
         border-radius: 2;
         transition: transform 0.3s;
     }
-    
+
     #nav-toggle {
         display: none;
     }
-    
+
     #nav-toggle:checked + .toggle-button .hamburger:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
-    
+
     #nav-toggle:checked + .toggle-button .hamburger:nth-child(2) {
         opacity: 0;
     }
-    
+
     #nav-toggle:checked + .toggle-button .hamburger:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
     }
-    
+
     .vertical-nav {
         width: 0px;
         background-color: #1ab5cd;
@@ -76,7 +76,7 @@
         overflow-x: hidden;
         transition: width 0.3s;
     }
-    
+
     .vertical-nav ul {
         list-style-type: none;
         margin: 80px 20px;
@@ -85,7 +85,7 @@
         align-items: center;
 
     }
-    
+
     .vertical-nav sa:hover {
         background-color: #94d1db;
     }
@@ -97,11 +97,11 @@
         width: 100px;
         margin: 5px 5px;
     }
-    
+
     .vertical-nav a:hover {
         background-color: #c6c7c8;
     }
-    
+
     .vertical-nav a {
         text-align: center;
         padding: 30px 40px 40px 15px;
@@ -109,12 +109,12 @@
         color: #0c0c0c;
         display: block;
     }
-    
+
     #nav-toggle:checked ~.vertical-nav {
         width: 200px;
     }
     /*Vertical Navagation ends here*/
-    
+
 
     /* Style for the navigation bar */
     .Navbar {
@@ -122,7 +122,7 @@
         overflow: hidden;
         padding-left: 108px;
     }
-  
+
     /* Style for the links in the navigation bar */
     .Navbar a {
         float: left; /* Float the links to the left to create a horizontal layout */
@@ -134,7 +134,7 @@
         font-family: 'Courier New', Courier, monospace;
         font-size: large;
     }
-  
+
     /* Change the link color on hover */
     .Navbar a:hover {
       background-color: #ddd; /* Background color on hover */
@@ -142,29 +142,29 @@
     }
 
     .new-icon {
-        width: 35px; 
-        height: 18px; 
+        width: 35px;
+        height: 18px;
         margin-left: 6px;
         margin-bottom: 0px;
         height: 100%;
     }
-    
+
     /* Style for the top bar */
     .Top-bar {
       text-align:center; /* Center-align the links within the top bar */
       /*padding: 10px 16px; Add some padding */
       margin:0px 0px 0px 0px;
     }
-    
+
     /* Add some margin to the top bar for spacing */
     .Top-bar a {
       margin: 50px 0px 0px 0px;
     }
-    
+
     .wel{
         background-repeat: no-repeat;
     }
-    
+
     .wel-text{
         background-color: #1ab5cd;
         height: 600px;
@@ -180,11 +180,11 @@
         letter-spacing: 5px;
         text-transform: uppercase;
         margin-bottom: 120px;
-        
+
     }
     h1{
         color:white;
-        
+
         text-shadow: 8px 10px 10px #000000;
         border-top:none;
         border-bottom: none;
@@ -193,7 +193,7 @@
         font-size: 80px;
         font-weight: 800;
         text-align: center;
-        
+
     }
     .about{
         /*margin-top: 0px;*/
@@ -201,10 +201,10 @@
         background-image: url("../Images/Renshou-HM.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: cover; 
+        background-size: cover;
         overflow: hidden;
         background-position: center;
-        margin-top: 0px;       
+        margin-top: 0px;
     }
 
     .about h2{
@@ -268,7 +268,7 @@
         width: 30px;
         height: 30px;
         align-items: center;
-        float: right;   
+        float: right;
     }
 
     .table-container{
@@ -276,17 +276,17 @@
         height: 200px;
     }
 
-    /*table start*/ 
+    /*table start*/
     .about-button-title{
         background-color: #000000;
         color: white;
         text-align: center;
     }
-    
+
     /*about button start here*/
     .about-button-container{
         display: grid;
-        grid-template-columns: 1fr 4fr; 
+        grid-template-columns: 1fr 4fr;
         height: 700px;
         background-image: url("../content/about/images/about-background.png");
         background-size: cover;
@@ -305,22 +305,22 @@
       padding: 0;
       margin: 0;
     }
-    
+
     .about-button li {
-      width: 100%; /* Make all buttons the same width */      
+      width: 100%; /* Make all buttons the same width */
     }
-    
+
     .about-button a {
       display: block;
       background-color: #d0dee5;
-      color: #030202; 
+      color: #030202;
       padding: 12px 10px;
       margin-right: 0px;
       text-decoration: none;
       text-align: center;
       text-align: left; /* Float the button container to the left */
-    } 
-    
+    }
+
     .about-button a:hover {
       background-color: #09abcf;
     }
@@ -333,7 +333,7 @@
     .about-button{
       float: left;
     }
-    
+
     .about-content {
       display: none;
       height: 500px;
@@ -344,7 +344,7 @@
       text-align: justify;
       padding: 5px 10px;
     }
-    
+
     .about-content img{
       position: right;
       width: 78%;
@@ -368,19 +368,19 @@
         padding: 8px;
         transition: background-color 0.3s;
       }
-      
+
     tr:hover {
       background-color: #b3b0b0;
     }
     /*about buttons ends here*/
 
-    
+
     /*table end here*/
 
     .icons{
         font-size: 20px;
         letter-spacing: 5px;
-    
+
     }
 
     .title{
@@ -392,15 +392,15 @@
         font-weight: 600;
         margin-left: 10%;
         text-transform: uppercase;
-        width: 80%; 
+        width: 80%;
     }
 
-    
+
     h3{
         font-size: 40px;
-        
+
         font-weight: 600;
-        
+
     }
     .contact{
         padding-bottom: 100px;
@@ -412,7 +412,7 @@
         padding-bottom: 150px;
         background-color: #0a0c0f;;
         overflow: hidden;
-    
+
     }
 
     .training-main{
@@ -424,7 +424,7 @@
         justify-content: space-evenly;
         margin-top: 0px;
         margin-bottom: 150px;
-        transition: transform 0.44s ease; /* Add a smooth transition for scaling */   
+        transition: transform 0.44s ease; /* Add a smooth transition for scaling */
     }
 
     .training-main:hover{
@@ -452,38 +452,38 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        
+
     }
 
     .training-text{
         width: 40%;
-    
+
     }
 
     .training-button {
         margin-right: 20%;
         float: right;
         background-color: white;
-        color: black; 
-        border: 2px solid black; 
+        color: black;
+        border: 2px solid black;
         padding: 10px 20px;
-        font-size: 16px; 
+        font-size: 16px;
         cursor: pointer;
         text-decoration: none;
       }
-      
+
       .training-button:hover {
         background-color: lightgray; /* Change background color on hover */
       }
 
     .contact{
-        
+
         background-color: #000000;
         padding-bottom: 150px;
     }
 
     .contact-image{
-        
+
         width:500px;
         overflow: hidden;
     }
@@ -503,11 +503,11 @@
         background-color: #eee;
         padding:30px;
     }
-    
+
     .input:focus,textarea:focus{
       outline: 1.5px solid gray;
     }
-    
+
     .input,textarea {
       width: 100%;
       border: 1px solid #bdbdbd;
@@ -532,7 +532,7 @@
 
     .name{
         display: flex;
-        justify-content: space-between;    
+        justify-content: space-between;
     }
 
     .name-list
@@ -544,7 +544,7 @@
         padding-bottom: 44px;
         margin-bottom: 0px;
         background-color: #0a0c0f;;
-        overflow: hidden;    
+        overflow: hidden;
     }
 
     .contact-address-list{
@@ -552,7 +552,7 @@
         background-color: #0a0c0f;;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        
+
     }
 
     .contact-list{
@@ -583,9 +583,9 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     .nutrition-intro-text{
-        background-color: rgb(145, 232, 253); 
+        background-color: rgb(145, 232, 253);
         padding:120px 30px;
         width: 35%;
         height: 490px;
@@ -616,7 +616,7 @@
     /*nutrition button start here*/
     .nutrition-button-container{
         display: grid;
-        grid-template-columns: 1fr 4fr; 
+        grid-template-columns: 1fr 4fr;
         height: 700px;
         background-image: url("../content/nutrition/images/nutrition_background.jpg");
         background-size: cover;
@@ -626,7 +626,7 @@
         padding: 15px;
         align-items: flex-start; /* Align buttons to the left */
     }
-    
+
     .nutrition-button ul {
       border:3px solid rgb(77, 72, 72);/*Make a border to the buttons*/
       float: left;
@@ -635,22 +635,22 @@
       padding: 0;
       margin: 0;
     }
-    
+
     .nutrition-button li {
-      width: 100%; /* Make all buttons the same width */      
+      width: 100%; /* Make all buttons the same width */
     }
-    
+
     .nutrition-button a {
       display: block;
       background-color: #d0dee5;
-      color: #030202; 
+      color: #030202;
       padding: 12px 10px;
       margin-right: 0px;
       text-decoration: none;
       text-align: center;
       text-align: left; /* Float the button container to the left */
-    } 
-    
+    }
+
     .nutrition-button a:hover {
       background-color: #09abcf;
     }
@@ -663,7 +663,7 @@
     .nutrition-button{
       float: left;
     }
-    
+
     .nutrition-content {
       display: none;
       height: 500px;
@@ -674,7 +674,7 @@
       text-align: justify;
       padding: 5px 10px;
     }
-    
+
     .nutrition-content img{
       position: right;
       width: 78%;
@@ -691,7 +691,7 @@
 
     /*Gears page*/
 
-    .gears-intro{  
+    .gears-intro{
         display: grid;
         position: static;
         font-size: small;
@@ -699,7 +699,7 @@
         background-image: url("../content/gears/images/vapourfly.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: cover; 
+        background-size: cover;
         overflow: hidden;
         background-position: center;
     }
@@ -709,7 +709,7 @@
         font-size: 1024%;
     }
 
-    .gears-article h4{ 
+    .gears-article h4{
         font-size: 28px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         padding: 10px 70px;
@@ -724,7 +724,7 @@
     }
 
     .gears-page{
-        position: static;       
+        position: static;
         top: 120%;
         left: 0;
         width: 100%;
@@ -732,11 +732,11 @@
         background: linear-gradient(to bottom, rgba(24, 173, 218, 0), #23aeca);
         height: auto;
         color: #000000;
-        background-color: #ffffff;  
-        opacity: 1;  
+        background-color: #ffffff;
+        opacity: 1;
     }
-    
-    .gear-gallery { 
+
+    .gear-gallery {
         display: grid;
         position: relative;
         justify-content: center;
@@ -771,12 +771,12 @@
         align-items: center;
         height: 100vh;
     }
-    
+
     video {
         height: 52vh;
         width: 55vh;
     }
-    
+
 
     /*The gears show divison*/
     .gears-overlay {
@@ -791,7 +791,7 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .gears-show {
         text-align: justify;
         position:relative;
@@ -803,7 +803,7 @@
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
-    
+
     .gears-close-button {
         position: relative;
         height: 28px;
@@ -814,7 +814,7 @@
         margin: 10px;
         cursor: pointer;
     }
-    
+
     .gears-show-button {
         margin-bottom: 20vh;
         padding: 10px 44px;
@@ -823,12 +823,12 @@
         border-radius: 5px;
         cursor: pointer;
     }
-    
+
     .gears-show-button:hover {
         text-decoration: none;
     }
-    
-    
+
+
     /* show the gears-overlay */
     .gears-show:target {
         display: flex;
@@ -845,7 +845,7 @@
         background-image: url("../content/events/eventPics/elite-runners1.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: cover; 
+        background-size: cover;
         overflow: hidden;
         background-position: center;
     }
@@ -859,12 +859,12 @@
         width: 100%;
         padding: 0px 0px;
         text-align: center;
-        font-size: 20px;    
+        font-size: 20px;
     }
     .event-content p {
         line-height: 1.6;
         margin-bottom: 1em;
-       
+
     }
     .events-content {
         margin-top: 38vh;
@@ -890,7 +890,7 @@
     .events-pics{
         margin: 0px;
         display: grid;
-        grid-template-columns: 10fr 10fr 10fr 10fr; 
+        grid-template-columns: 10fr 10fr 10fr 10fr;
         column-gap: 4vh;
         padding: 18px;
         height: 90vh;
@@ -905,10 +905,10 @@
         height: 90%;
     }
 
-    .events-gallery img{ 
+    .events-gallery img{
         width: 100%;
         height: 44%;
-    }   
+    }
 
     .events-desc h6{
         color: #000000;
@@ -964,9 +964,9 @@
     }
 
 
-    
-    
-    
+
+
+
 
     /* Add a CSS class to reveal the content when scrolling */
 
@@ -977,7 +977,7 @@
             background-color: rgba(240, 240, 241, 0.9);
         }
         .wel{
-            
+
             margin: auto;
             height: 900px;
         }
@@ -997,7 +997,7 @@
            width: 50%;
        }
     }
-    
+
     /*medium screens - Laptops*/
     @media screen and (max-width: 1024px) {
         .wel{
@@ -1015,7 +1015,7 @@
             justify-content: space-evenly;
        }
     }
-    
+
     /*Small screens - tablets*/
     @media screen and (max-width: 768px) {
         .wel{
@@ -1053,7 +1053,7 @@
             font-size: 36px;
         }
     }
-    
+
     /*Extra small screens - phones*/
     @media screen and (max-width: 480px) {
 
@@ -1072,7 +1072,7 @@
             margin-right: 10px; /* Add margin between items */
         }
         .wel{
-            
+
             background-position: center;
         }
         .wel-text{
@@ -1101,7 +1101,7 @@
             height: 300px;
             color: #000000;
             padding: 0px 50px 0px 50px;
-            
+
         }
         .about .title h2    {
             color:rgb(247, 246, 246);
@@ -1156,9 +1156,9 @@
             color: #40b5dc;
         }
         .about .title{
-        font-size: 30px; 
-        padding:30px 10px;  
-        
+        font-size: 30px;
+        padding:30px 10px;
+
         }
 
         h3{
@@ -1170,13 +1170,13 @@
             height: 700px;
             overflow: hidden;
             background-position-x:left ;
-        
+
         }
 
         .card{
             width: 100%;;
         }
-        
+
         .card-list{
             width: 300px;
         }
@@ -1184,8 +1184,8 @@
         .training-main{
             justify-content: center;
             margin-bottom: 10px;
-            padding-bottom: 0px;        
-            transition: transform 0.44s ease; /* Add a smooth transition for scaling */   
+            padding-bottom: 0px;
+            transition: transform 0.44s ease; /* Add a smooth transition for scaling */
         }
 
             .training-main:hover{
@@ -1207,18 +1207,18 @@
             color: #090707;
             font-size: small;
             text-align: center;
-     
+
         }
 
         .contact-main{
         width: 90%;
-        margin:auto;    
+        margin:auto;
         }
 
         .name{
             flex-direction: column;
         }
-        
+
         .name-list{
             width: 100%;
         }
@@ -1232,7 +1232,7 @@
             border:1px solid rgb(77, 72, 72);
             padding:20px;
             border-radius: 10px;
-    
+
         }
 
         .contact-list p{
@@ -1273,7 +1273,7 @@
         }
         .nutrition-button-container{
             display: grid;
-            grid-template-columns: 1fr 4fr; 
+            grid-template-columns: 1fr 4fr;
             height: 1900px;
             background-image: url("../content/nutrition/images/nutrition_background.jpg");
             background-size: cover;
@@ -1292,7 +1292,7 @@
         }
 
         .gears-page{
-            position: static;       
+            position: static;
             margin-left: 0vh;
             margin-right: 0vh;
             top: 120%;
@@ -1302,13 +1302,13 @@
             background: linear-gradient(to bottom, rgba(24, 173, 218, 0), #23aeca);
             height: auto;
             color: #000000;
-            background-color: #ffffff;  
-            opacity: 1;  
+            background-color: #ffffff;
+            opacity: 1;
 
         }
 
         /*events page*/
-        /*Adjust the events-detail class to enhance mobile reading 
+        /*Adjust the events-detail class to enhance mobile reading
         experience*/
         .events-detail{
             color: black;
