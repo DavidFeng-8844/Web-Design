@@ -30,7 +30,7 @@
         cursor: pointer;
         position: absolute;
         top: 20px;
-        left: 120px;
+        left: 0px;
         z-index: 2;
         display: flex;
         flex-direction: column;
@@ -41,6 +41,7 @@
     }
 
     .hamburger {
+        position: relative;
         background-color: #e8e5e5;
         height: 4px;
         width: 40px;
@@ -72,7 +73,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 710px;
+        height: auto;
         overflow-x: hidden;
         transition: width 0.3s;
     }
@@ -101,7 +102,7 @@
     .vertical-nav a:hover {
         background-color: #c6c7c8;
     }
-
+/*
     .vertical-nav a {
         text-align: center;
         padding: 30px 40px 40px 15px;
@@ -109,7 +110,7 @@
         color: #0c0c0c;
         display: block;
     }
-
+*/
     #nav-toggle:checked ~.vertical-nav {
         width: 200px;
     }
@@ -123,18 +124,18 @@
         padding-left: 108px;
     }
 
-    /* Style for the links in the navigation bar */
+    /* Style for the links in the navigation bar*/
     .Navbar a {
-        float: left; /* Float the links to the left to create a horizontal layout */
-        display: block; /* Display the links as blocks for better styling */
-        color: #fff; /* Text color */
-        text-align: center; /* Center-align the text */
-        padding: 24px 16px 28px 16px; /* Add some padding to the links for spacing */
-        text-decoration: none; /* Remove underlines from links */
+        float: left; 
+        display: block; 
+        color: #fff; 
+        text-align: center; 
+        padding: 24px 16px 28px 16px;
+        text-decoration: none;
         font-family: 'Courier New', Courier, monospace;
         font-size: large;
     }
-
+    
     /* Change the link color on hover */
     .Navbar a:hover {
       background-color: #ddd; /* Background color on hover */
@@ -143,7 +144,7 @@
 
     .new-icon {
         width: 35px;
-        height: 18px;
+        height: 10px;
         margin-left: 6px;
         margin-bottom: 0px;
         height: 100%;
@@ -174,6 +175,7 @@
         text-align: center;
         flex-direction: column;
     }
+
     .wel-text h3{
         font-size: 40px;
         font-weight: 600;
@@ -457,6 +459,7 @@
 
     .training-text{
         width: 40%;
+        color: white    ;
 
     }
 
@@ -552,13 +555,14 @@
         background-color: #0a0c0f;;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        color: white;
 
     }
 
     .contact-list{
         margin: 20px 0px !important;
     }
-
+    
     h4{
         text-transform: uppercase;
     }
@@ -963,7 +967,12 @@
         display: block;
     }
 
-
+    .card-img-custom {
+        position: static;
+        width: auto;
+        height: 200px; /* Adjust the height as needed */
+        object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    }
 
 
 

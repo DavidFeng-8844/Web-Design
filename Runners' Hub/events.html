@@ -9,60 +9,46 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Runners Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link" href="index.html">HOME</a>
-                <a href="plan.html" class="nav-plan">PLAN</a>
-                <a class="nav-item nav-link" href="about.html">ABOUT</a>
-                <a class="nav-item nav-link" href="training.html">TRAINING</a>
-                <a class="nav-item nav-link" href="nutrition.html">NUTRITION</a>
-                <a class="nav-item nav-link" href="gears.html">GEARS</a>
-                <a class="nav-item nav-link" href="events.html">EVENTS</a>
-            </div>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="plan.html">PLAN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="training.html">TRAINING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nutrition.html">NUTRITION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gears.html">GEARS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">EVENTS</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-    </nav>
-    <!--Old nvagation bar-->
-    <!--Vertical Navbar-->
-
-    <input type="checkbox" id="nav-toggle">
-    <label for="nav-toggle" class="toggle-button">
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-    </label>
-    <nav class="vertical-nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="plan.html">Plan</a></li>
-        <li><a href="about.html ">About</a></li>
-        <li><a href="training.html">Training</a></li>
-        <li><a href="nutrition.html">Nutrition</a></li>
-        <li><a href="gears.html">Gears</a></li>
-        <li><a href="events.html">Events</a></li>
-        </ul>
-    </nav>
-
-    <!-- Navbar
-    <div class="Navbar">
-        <div class="Top-bar">
-          <a href="index.html" class="nav-home">HOME</a>
-            <a href="plan.html" class="nav-plan">PLAN</a>
-          <a href="about.html" class="nav-about">ABOUT</a>
-          <a href="training.html" class="nav-training">TRAINING</a>
-          <a href="nutrition.html" class="nav-nutrition">NUTRITION</a>
-          <a href="gears.html" class="nav-gears">GEARS</a>
-          <a href="events.html" class="nav-events">EVENTS</a>
-        </div>
-    </div>
-    -->
+    </nav>  
+    
 
     <!-- Events Container -->
-    <div class="container mt-4">
+    <div class="container bg-dark col-12">
 
         <div class="row">
             <div class="col-12 text-center">
@@ -71,53 +57,44 @@
         </div>
 
         <!-- Events Content -->
-        <div class="row mt-4">
+        <div class="card-deck">
             <!-- Event Cards -->
-            <div class="col-md-6 col-lg-3 mb-4">
-                <!-- Bootstrap Card -->
-                <div class="card">
-                    <img src="content/events/eventPics/kipyegon.jpg" class="card-img-top" alt="Faith Kipyegon">
-                    <div class="card-body">
-                        <h6 class="card-title">Faith Kipyegon Breaks Mile World Record</h6>
-                        <p class="card-text">🏃‍♀️ Faith Kipyegon sets a new women's mile world record with a time of 4:07.64, continuing her impressive streak of record-breaking performances.</p>
-                        <a href="#kipyegon" class="btn btn-primary">Click for whole Article</a>
-                    </div>
+            <div class="card d-flex">
+                <img src="content/events/eventPics/kipyegon.jpg" class="card-img-top card-image-custom" alt="Faith Kipyegon">
+                <div class="card-body">
+                    <h6 class="card-title">Faith Kipyegon Breaks Mile World Record</h6>
+                    <p class="card-text">🏃‍♀️ Faith Kipyegon sets a new women's mile world record with a time of 4:07.64, continuing her impressive streak of record-breaking performances.</p>
+                    <a href="#kipyegon" class="btn btn-primary">Click for whole Article</a>
                 </div>
             </div>
 
             <!-- Repeat similar structure for other events -->
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card">
-                    <img src="content/events/eventPics/kiptum.jpg" class="card-img-top" alt="Kelvin Kiptum">
-                    <div class="card-body">
-                        <h6 class="card-title">World Record! Kelvin Kiptum of Kenya Runner</h6>
-                        <p class="card-text">Kelvin Kiptum of Kenya breaks the world record at the Chicago Marathon, running in just 2:00:35, surpassing Eliud Kipchoge's previous record.</p>
-                        <a href="#kiptum" class="btn btn-primary">Click for whole Article</a>
-                    </div>
+            <div class="card d-flex">
+                <img src="content/events/eventPics/kiptum.jpg" class="card-img-top card-img-custom" alt="Kelvin Kiptum">
+                <div class="card-body">
+                    <h6 class="card-title">World Record! Kelvin Kiptum of Kenya Runner</h6>
+                    <p class="card-text">Kelvin Kiptum of Kenya breaks the world record at the Chicago Marathon, running in just 2:00:35, surpassing Eliud Kipchoge's previous record.</p>
+                    <a href="#kiptum" class="btn btn-primary">Click for whole Article</a>
                 </div>
             </div>
 
             <!--jakob-->
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card">
-                    <img src="content/events/eventPics/jakob.jpg" class="card-img-top" alt="Jakob Ingebrigtsen">
-                    <div class="card-body">
-                        <h6 class="card-title">Jakob Ingebrigtsen's World Record Highlights Historic Day at Brussels Diamond League Meet</h6>
-                        <p class="card-text">In the penultimate Diamond League competition, broke the world record in the men's 2,000 meters</p>
-                        <a href="#jakob" class="btn btn-primary">Click for whole Article</a>
-                    </div>
+            <div class="card">
+                <img src="content/events/eventPics/jakob.jpg" class="card-img-top card-image-custom" alt="Jakob Ingebrigtsen">
+                <div class="card-body">
+                    <h6 class="card-title">Jakob Ingebrigtsen's World Record Highlights Historic Day at Brussels Diamond League Meet</h6>
+                    <p class="card-text">In the penultimate Diamond League competition, broke the world record in the men's 2,000 meters</p>
+                    <a href="#jakob" class="btn btn-primary">Click for whole Article</a>
                 </div>
             </div>
 
             <!--hejie-->
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card">
-                    <img src="content/events/eventPics/hejie.jpg" class="card-img-top" alt="He Jie">
-                    <div class="card-body">
-                        <h6 class="card-title">Dream comes true as China's He wins Asian Games marathon</h6>
-                        <p class="card-text">Hosts    China ended the athletics events at the 19th Asian Games Hangzhou on a high note as He Jie won the men's event  in the marathon races.</p>
-                        <a href="#hejie" class="btn btn-primary">Click for whole Article</a>
-                    </div>
+            <div class="card">
+                <img src="content/events/eventPics/hejie.jpg" class="card-img-top" alt="He Jie">
+                <div class="card-body">
+                    <h6 class="card-title">Dream comes true as China's He wins Asian Games marathon</h6>
+                    <p class="card-text">Hosts    China ended the athletics events at the 19th Asian Games Hangzhou on a high note as He Jie won the men's event  in the marathon races.</p>
+                    <a href="#hejie" class="btn btn-primary">Click for whole Article</a>
                 </div>
             </div>
 
@@ -189,7 +166,7 @@
         </div>
     </div>
     <!-- Contact Address Section -->
-    <div class="container mt-4" id="contact">
+    <div class="container mt-4 bg-dark col-12" id="contact">
         <h2 class="title text-center">__ GET IN TOUCH</h2>
         <div class="row">
             <!-- Contact Address Lists -->
