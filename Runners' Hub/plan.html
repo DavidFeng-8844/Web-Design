@@ -10,8 +10,8 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#"><img src="images/favicon.ico" alt="logo-favicon"></a>
-        <a class="navbar-brand" href="#">Runners Hub</a>
+        <a class="navbar-brand" href="index.html"><img src="images/favicon.ico" alt="logo-favicon"></a>
+        <a class="navbar-brand" href="index.html">Runners Hub</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,7 +45,11 @@
                 <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
-    </nav>  
+    </nav>
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+        <div id="progress-text"></div>
+      </div>      
     <form id="trainingForm">
         <!-- Your form fields go here -->
         <label for="userName">Name:</label>
@@ -69,6 +73,7 @@
         <input type="number" id="planYear" name="planYear" min="2023" value="2023" required>
         <button type="button" onclick="console.log('Button Clicked!'); generateTrainingPlan()">Generate Training Plan PDF</button>
     </form>
+    <div id="chartdiv" style="width: 100%; height: 500px;"></div>
     <div class="contact-address" id="contact">
     <h2 class="title"> __ GET IN TOUCH</h2>
     <div class="contact-address-list">

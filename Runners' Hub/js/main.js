@@ -67,13 +67,47 @@ function getMonthName(month) {
     return months[month - 1];
 }
 
+//Function for progress bar
+document.addEventListener('DOMContentLoaded', function () {
+    const progressContainer = document.getElementById('progress-container');
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
 
+    function updateProgressBar() {
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight - windowHeight;
+        const scrolled = window.scrollY;
+        const scrollPercentage = (scrolled / documentHeight) * 100;
+
+        progressBar.style.width = scrollPercentage + '%';
+        progressText.innerHTML = Math.round(scrollPercentage) + '%';
+
+        if (scrollPercentage > 99) {
+            progressText.innerHTML = "Completed";
+        }
+    }
+    window.addEventListener('scroll', updateProgressBar);
+});
+
+//Get user geographic location
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
+}
 
 $(document).ready(function () {
 
     //Make gears-intro fade out on scroll
     $(window).scroll(function () {
-        $(".gears-intro").css("opacity", 1 - $(window).scrollTop() / 500);
+        $(".gears-jumbotron").css("opacity", 1 - $(window).scrollTop() / 500);
     });
 
     // Add a new icon to vertical navagation bar's button
@@ -81,6 +115,25 @@ $(document).ready(function () {
     navPlanButton.wrapInner('<span class="button-text"></span>');
     let newIcon = '<img src="images/plan-icon.png" alt="New Icon" class="new-icon">';
     navPlanButton.append(newIcon);
+
+    var progressBar = $('#progress-bar-container');
+    var progressBarInner = $('#progress-bar');
+
+    $(document).ajaxStart(function () {
+      progressBar.show();
+    });
+
+    $(document).ajaxStop(function () {
+      progressBar.hide();
+    });
+
+    $(window).scroll(function() {
+      var scrollPosition = $(document).scrollTop();
+      var documentHeight = $(document).height();
+      var windowHeight = $(window).height();
+      var progress = (scrollPosition / (documentHeight - windowHeight)) * 100;
+      progressBarInner.width(progress + '%');
+    });
     
 });
 

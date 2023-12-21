@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/style.css">
     
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="56">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="#"><img src="images/favicon.ico" alt="logo-favicon"></a>
-    <a class="navbar-brand" href="#">Runners Hub</a>
+    <a class="navbar-brand" href="index.html"><img src="images/favicon.ico" alt="logo-favicon"></a>
+    <a class="navbar-brand" href="index.html">Runners Hub</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -48,6 +48,12 @@
         </form>
     </div>
   </nav>  
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+    <div id="progress-text" class=""></div>
+  </div>
+  <button onclick="getLocation()">Get Location</button>
+  <p id="demo"></p>
     <!--Home section-->
     <section id="home">
         <div class="wel">
