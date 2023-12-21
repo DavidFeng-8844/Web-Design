@@ -116,7 +116,12 @@
     }
     /*Vertical Navagation ends here*/
 
-
+    /*Style for the new navagation bar with bootstrap*/
+    .navbar {
+        background-color: #0b0808; /* Background color */
+        overflow: hidden;
+        padding-left: 108px;
+    }
     /* Style for the navigation bar */
     .Navbar {
         background-color: #121111; /* Background color */
