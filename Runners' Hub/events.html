@@ -15,7 +15,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
@@ -45,19 +45,20 @@
                 <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
-    </nav>  
+    </nav>
     <div id="progress-container">
         <div id="progress-bar"></div>
         <div id="progress-text"></div>
       </div>
     <!-- Events Container -->
-    <div class="container bg-dark col-12">
+    <div class="event-container col-12 bg-dark">
 
-        <div class="row">
+        <div class="row event-head-container">
             <div class="col-12 text-center">
                 <h1>Events</h1>
             </div>
-        </div>
+        </div>  
+
         <div class="row">
             <div class="col-12 text-center">
                 <h5 class="display-4 text-light">Marathon Events</h5>
@@ -73,52 +74,52 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="content/boston.jpg" class="d-block w-100" alt="...">
+                        <img src="content/events/eventPics/boston.jpg" class="d-block w-100" alt="Boston Marathon">
                         <div class="carousel-caption d-none d-md-block">
                             <h6>B.A.A</h6>
                             <h5>Boston Marathon</h5>
-                            <p>Boston Marathon is the marathon with the longest history.</p>
+                            <p>Boston Marathon is the marathon with     the longest history.</p>
                         </div>
                       </div>
-        
+
                       <div class="carousel-item">
-                        <img src="content/newyork.jpg" class="d-block w-100" alt="...">
+                        <img src="content/events/eventPics/newyork.jpg" class="d-block w-100" alt="New York">
                         <div class="carousel-caption d-none d-md-block">
                             <h6>TCS</h6>
                             <h5>New York City Marathon</h5>
                             <p>Boston Marathon is the marathon with the longest history.</p>
                         </div>
                       </div>
-        
+
                       <div class="carousel-item">
-                        <img src="content/berlin.jpg" class="d-block w-100" alt="...">
+                        <img src="content/events/eventPics/berlin.jpg" class="d-block w-100" alt="Berlin">
                         <div class="carousel-caption d-none d-md-block">
                             <h6>BMW</h6>
                             <h5>Berlin Marathon</h5>
                             <p>Boston Marathon is the marathon with the longest history.</p>
                         </div>
                       </div>
-        
+
                       <div class="carousel-item">
-                        <img src="content/chicago.jpg" class="d-block w-100" alt="...">
+                        <img src="content/events/eventPics/chicago.jpg" class="d-block w-100" alt="Chicago">
                         <div class="carousel-caption d-none d-md-block">
                             <h6>Bank of America</h6>
                             <h5>Chicago Marothon</h5>
                             <p>Boston Marathon is the marathon with the longest history.</p>
                         </div>
                       </div>
-        
+
                       <div class="carousel-item">
-                        <img src="content/london.jpg" class="d-block w-100" alt="...">
+                        <img src="content/events/eventPics/london.jpg" class="d-block w-100" alt="London">
                         <div class="carousel-caption d-none d-md-block">
                             <h6>Virgin Money</h6>
                             <h5>London Marathon</h5>
                             <p>Boston Marathon is the marathon with the longest history.</p>
                         </div>
                       </div>
-        
+
                       <div class="carousel-item">
-                        <img src="content/tokyo.jpg" class="d-block w-100" alt="...">
+                        <img src="content/events/eventPics/tokyo.jpg" class="d-block w-100" alt="Tokyo">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Tokyo Marathon</h5>
                             <p>Boston Marathon is the marathon with the longest history.</p>
@@ -133,57 +134,70 @@
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
-                  </div>
-        </div>
+                </div>
+            </div> 
+        </div> 
         <!-- Track Events Content -->
-        <h5 class="display-4 text-light">Marathon Events</h5>
-        <p class="text-light display-5">These are the most presigoud Marathon events in the World which are also called as the major Marathons</p>
-        <div class="card-deck">
+        <div class="col-12">
+            <h5 class="display-4 text-light text-center">Events News</h5>
+            <p class="text-center text-light display-5">These are some amzing Track events</p>
+        </div>
+        <div class="card-group">
             <!-- Event Cards -->
             <div class="card d-flex">
-                <img src="content/events/eventPics/kipyegon.jpg" class="card-img-top card-image-custom" alt="Faith Kipyegon">
+                <img src="content/events/eventPics/kipyegon.jpg" class="card-img-top card-img-fixed" alt="Faith Kipyegon">
                 <div class="card-body">
                     <h6 class="card-title">Faith Kipyegon Breaks Mile World Record</h6>
                     <p class="card-text">🏃‍♀️ Faith Kipyegon sets a new women's mile world record with a time of 4:07.64, continuing her impressive streak of record-breaking performances.</p>
-                    <a href="#kipyegon" class="btn btn-primary">Click for whole Article</a>
+                    <div class="card-footer">
+                        <a href="#kipyegon" onclick="document.getElementById('kipyegon').style.display = 'block'" class="btn btn-primary card-footer-button">More</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Repeat similar structure for other events -->
             <div class="card d-flex">
-                <img src="content/events/eventPics/kiptum.jpg" class="card-img-top card-img-custom" alt="Kelvin Kiptum">
+                <img src="content/events/eventPics/kiptum.jpg" class="card-img-top card-img-fixed" alt="Kelvin Kiptum">
                 <div class="card-body">
                     <h6 class="card-title">World Record! Kelvin Kiptum of Kenya Runner</h6>
                     <p class="card-text">Kelvin Kiptum of Kenya breaks the world record at the Chicago Marathon, running in just 2:00:35, surpassing Eliud Kipchoge's previous record.</p>
-                    <a href="#kiptum" class="btn btn-primary">Click for whole Article</a>
+                    <div class="card-footer">
+                        <a href="#kiptum" onclick="document.getElementById('kiptum').style.display = 'block'" class="btn btn-primary card-footer-button">More</a>
+                    </div>
                 </div>
             </div>
 
             <!--jakob-->
             <div class="card">
-                <img src="content/events/eventPics/jakob.jpg" class="card-img-top card-image-custom" alt="Jakob Ingebrigtsen">
+                <img src="content/events/eventPics/jakob.jpg" class="card-img-top card-image-fixed" alt="Jakob Ingebrigtsen">
                 <div class="card-body">
                     <h6 class="card-title">Jakob Ingebrigtsen's World Record Highlights Historic Day at Brussels Diamond League Meet</h6>
                     <p class="card-text">In the penultimate Diamond League competition, broke the world record in the men's 2,000 meters</p>
-                    <a href="#jakob" class="btn btn-primary">Click for whole Article</a>
+                    <div class="card-footer">
+                        <a href="#jakob" onclick="document.getElementById('jakob').style.display = 'block'" class="btn btn-primary card-footer-button">More</a>
+                    </div>
                 </div>
             </div>
 
             <!--hejie-->
             <div class="card">
-                <img src="content/events/eventPics/hejie.jpg" class="card-img-top" alt="He Jie">
+                <img src="content/events/eventPics/hejie.jpg" class="card-img-top card-image-fixed" alt="He Jie">
                 <div class="card-body">
                     <h6 class="card-title">Dream comes true as China's He wins Asian Games marathon</h6>
-                    <p class="card-text">Hosts    China ended the athletics events at the 19th Asian Games Hangzhou on a high note as He Jie won the men's event  in the marathon races.</p>
-                    <a href="#hejie" class="btn btn-primary">Click for whole Article</a>
+                    <p class="card-text">Hosts China ended the athletics events at the 19th Asian Games Hangzhou on a high note as He Jie won the men's event  in the marathon races.</p>
+                    <div class="card-footer">
+                        <a href="#hejie" onclick="document.getElementById('hejie').style.display = 'block'" class="btn btn-primary card-footer-button">More</a>
+                    </div>
                 </div>
-            </div>
+            </div>  
 
-        </div>
-        <div class="events-detail">
-
-            <div id="kipyegon"class="events-detail-col">
-                <p>
+        </div>  
+        <div class="events-detail text-dark bg-light">
+            <!--Add a close button-->
+            <!-- Add event details -->
+            <div id="kipyegon" class="events-detail-col">   
+                <div class="row"><div class="col float-right"><button type="button" class="btn btn-danger" onclick="closeArticle('kipyegon')">Close</button></div></div>
+                <p> 
                     Faith Kipyegon's record-breaking streak continued with a stunning performance at the Monaco Diamond League meeting. On Friday, July 21, the Kenyan runner shattered the women’s world record in the mile, winning in 4:07.64 at Stade Louis II.
 
                  Along with Kipyegon, seven competitors broke their respective national records, including American Nikki Hiltz (4:16.35). And 12 runners achieved personal bests in the fastest women’s mile in history.
@@ -192,7 +206,8 @@
                 </p>
             </div>
 
-            <div id="kiptum"class="events-detail-col">
+            <div id="kiptum" class="events-detail-col">
+                <button type="button" class="btn btn-danger" onclick="closeArticle('kiptum')">Close</button>
                 <p>Kelvin Kiptum of Kenya shattered the world record at the Chicago Marathon, running 2:00:35 and breaking the previous mark of 2:01:09 set by Eliud Kipchoge in Berlin last year.</p>
 
                 <p>Kiptum, 23, was running in only his third marathon. As he did in his first two, he ran the second half of the race faster than the first. He ran 1:00:48 for the first half and 59:47 for the second.</p>
@@ -212,7 +227,8 @@
                 <p>Kiptum earns $100,000 for the victory, plus a $50,000 course record bonus.</p>
             </div>
 
-            <div id="jakob"class="events-detail-col">
+            <div id="jakob" class="events-detail-col">
+                <button type="button" class="btn btn-danger" onclick="closeArticle('jakob')">Close</button>
                 <p>In the penultimate Diamond League competition of the year, Jakob Ingebrigtsen added another impressive performance to his career tally. On Friday, September 8, the reigning Olympic champion from Norway broke the world record in the men’s 2,000 meters at the Brussels Diamond League meeting.</p>
 
                 <p>Following a global championship, the last few meets on the elite circuit provide opportunities for athletes to earn redemption or tackle unmet goals, and Brussels proved no different.</p>
@@ -227,7 +243,8 @@
 
             </div>
 
-            <div id="hejie"class="events-detail-col">
+            <div id="hejie" class="events-detail-col">
+                <button type="button" class="btn btn-danger mx-auto" onclick="closeArticle('hejie')">Close</button>
                 <p>
                     Hosts People's Republic of China ended the athletics events at the 19th Asian Games Hangzhou on a high note as He Jie won the men's event and two other Chinese athletes collected medals in the marathon races.
 
@@ -247,26 +264,40 @@
         </div>
     </div>
     <!-- Contact Address Section -->
-    <div class="container mt-4 bg-dark col-12" id="contact">
-        <h2 class="title text-center">__ GET IN TOUCH</h2>
-        <div class="row">
-            <!-- Contact Address Lists -->
-            <div class="col-md-3">
-                <h4>Location</h4>
-                <p>SWJTU, Chengdu, China</p>
-            </div>
-            <div class="col-md-3">
-                <h4>Opening Hour</h4>
-                <p>9 to 5</p>
-            </div>
-            <div class="col-md-3">
-                <h4>Say Hello</h4>
-                <p>el22y2f@leeds.ac.uk</p>
-            </div>
-            <div class="col-md-3">
-                <h4>Copyright</h4>
-                <p>2023 Yujie Feng. All rights reserved.</p>
-            </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="contact-address" id="contact">
+                <h2 class="title"> __ GET IN TOUCH</h2>
+                <div class="contact-address-list">
+          
+                  <div class="contact-list">
+                    <h4>location</h4>
+                    <br>
+                    <p>SWJTU,Chengdu,China</p>
+                  
+                  </div>
+          
+                  <div class="contact-list">
+                     <h4>Opening Hour</h4>
+                     <br>
+                     <p>9 to 5</p>
+                  </div>
+          
+                  <div class="contact-list">
+                    <h4>Say hello</h4>
+                    <br>
+                    <p>el22y2f@leeds.ac.uk</p>
+                  </div>
+          
+                  <div class="contact-list">
+                    <h4>CopyRight</h4>
+                    <br>
+                    <p>2023 Yujie Feng. All rights reserved.</p>
+                  </div>
+          
+                </div>
+          
+              </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

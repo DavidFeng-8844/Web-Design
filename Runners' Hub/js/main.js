@@ -66,6 +66,13 @@ function getMonthName(month) {
     ];
     return months[month - 1];
 }
+//Function to close the article
+function closeArticle(articleId) {
+    var article = document.getElementById(articleId);
+    if (article) {
+        article.style.display = 'none';
+    }
+}
 
 //Function for progress bar
 document.addEventListener('DOMContentLoaded', function () {
@@ -91,23 +98,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //Get user geographic location
 function getLocation() {
+    document.getElementById("demoLocation").classList.toggle("d-none");
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
+
     } else {
-        document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+        document.getElementById("demoLocation").innerHTML = "Geolocation is not supported by this browser.";
     }
 }
 
 function showPosition(position) {
-    document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude +
-        "<br>Longitude: " + position.coords.longitude;
+    document.getElementById("demoLocation").innerHTML = "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;  
 }
 
-$(document).ready(function () {
 
+
+$(document).ready(function () {
+    //Update messages
+    $('#updateModal').modal('show');
+    
     //Make gears-intro fade out on scroll
     $(window).scroll(function () {
         $(".gears-jumbotron").css("opacity", 1 - $(window).scrollTop() / 500);
+    });
+    //Make the event container fade out on scroll
+    $(window).scroll(function () {
+        $(".event-head-container").css("opacity", 1 - $(window).scrollTop() / 500);
     });
 
     // Add a new icon to vertical navagation bar's button
@@ -134,7 +151,6 @@ $(document).ready(function () {
       var progress = (scrollPosition / (documentHeight - windowHeight)) * 100;
       progressBarInner.width(progress + '%');
     });
-    
 });
 
 

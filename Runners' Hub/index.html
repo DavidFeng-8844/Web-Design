@@ -11,6 +11,88 @@
     
 </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="56">
+  <div class="alert alert-info mb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <strong>Update:</strong> Welcome to Runner's Hub! Check out the latest features and improvements.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Add some comments-->
+  <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="updateModalLabel">Website Update</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="update-modal-body">
+          <div class="row">
+            <div class="col align-self-center">
+              <div class="update-image text-center">
+                <img src="content/index/progressbar.png" alt="plan1">
+              </div>
+            </div>
+            <div class="col">
+              <div class="update-text">
+                <h4>Plan</h4>
+                <p>Plan your running schedule</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" onclick="window.location.href='plan.html'">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col align-self-center">
+              <div class="update-image text-center">
+                <img src="content/index/progressbar.png" alt="plan1">
+              </div>
+            </div>
+            <div class="col">
+              <div class="update-text">
+                <h4>Progress bar</h4>
+                <p>Make a better reading experience</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="plan.html" onclick="window.location.href='plan.html'">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+              <div class="update-table ml-5">
+                <table>
+                  <thead>
+                    <tr>
+                      <th style="width: 450px;">Items </th>
+                      <th style="width: 250px;">Techniques</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td onclick="window.location.href='plan.html'">Progress bar</td>
+                      <td>JavaScript</td>
+                    </tr>
+                    <tr>
+                      <td>3 KM</td>
+                      <td>10:20</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="index.html"><img src="images/favicon.ico" alt="logo-favicon"></a>
     <a class="navbar-brand" href="index.html">Runners Hub</a>
@@ -52,8 +134,6 @@
     <div id="progress-bar"></div>
     <div id="progress-text" class=""></div>
   </div>
-  <button onclick="getLocation()">Get Location</button>
-  <p id="demo"></p>
     <!--Home section-->
     <section id="home">
         <div class="wel">
@@ -155,8 +235,6 @@
 
       </div>
     </main>
-  </div>
-
       <div class="contact-address" id="contact">
         <h2 class="title"> __ GET IN TOUCH</h2>
         <div class="contact-address-list">
