@@ -1114,7 +1114,7 @@
             background-position: center;
         }
         .wel-text{
-            height: 500px;
+            height: auto;
         }
         h1{
             font-size: 70px;
@@ -1138,7 +1138,7 @@
             background-position: center;
         }
         .wel-text{
-            height: 600px;
+            height: auto;
             text-align: center;
         }
         h1{
@@ -1202,7 +1202,7 @@
             background-position: center;
         }
         .wel-text{
-            height: 640px;
+            height: auto;
             padding-top: 30px;
         }
         h1{
