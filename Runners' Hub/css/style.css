@@ -305,7 +305,7 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 20px;
     }
-
+    
     .wel{
         background-repeat: no-repeat;
     }
@@ -344,7 +344,7 @@
     .about{
         /*margin-top: 0px;*/
         height: 700px;
-        background-image: url("../Images/Renshou-HM.jpg");
+        background-image: url("../images/Renshou-HM.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -555,7 +555,7 @@
         overflow: hidden;
     }
 
-    .training{
+    .training{  
         padding-bottom: 150px;
         background-color: #0a0c0f;;
         overflow: hidden;

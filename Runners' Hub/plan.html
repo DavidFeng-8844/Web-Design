@@ -50,9 +50,7 @@
         <div id="progress-bar"></div>
         <div id="progress-text"></div>
     </div>      
-    <button type="button" class="btn btn-info" data-toggle="button" onclick="getLocation()">Get Location</button>
-    <p id="demoLocation" class="d-none"></p>
-    <div class="plan-container">
+    <div class="plan-container">  
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -61,7 +59,7 @@
                         <p class="text-center">Use the tool below to make a running schedule to help train for your next race.</p>
                     </div>
                     <div class="plan-form plan-form-content">
-                        <div id="error-message" class="error-message">Please fill in all the required fields.</div>
+                        <div id="error-message" class="error-message text-black-50 text-center">Please fill in all the required fields.   (Enter to store)</div>
                         <div class="form-group">
                             <label for="currentDistance">How far do you currently run in a week?</label>
                             <div class="input-group">
@@ -77,11 +75,11 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="Personal-Best">What is your Personal Best?</label>
+                            <label for="personalBest">What is your Personal Best?</label>
                             <div class="input-group">
-                                <input type="number" class="form-control" id="PersonalBest" placeholder="0" min="1">
+                                <input type="number" class="form-control" id="personalBest" placeholder="0" min="1">
                                 <div class="input-group-append">
-                                    <select class="custom-select" id="distanceType">
+                                    <select class="custom-select" id="personalBestType">
                                         <option>Select...</option>
                                         <option value="km">5K</option>
                                         <option value="miles">10K</option>
@@ -106,7 +104,6 @@
                                     <option value="16.0934">10 Miles</option>
                                     <option value="21.0975">Half Marathon</option>
                                     <option value="42.195">Marathon</option>
-                                    <option value="custom">Custom</option>
                                 </select>
                             </div>
                         </div>
