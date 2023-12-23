@@ -5,20 +5,20 @@ document.addEventListener('DOMContentLoaded', function () {
             return element ? element.value : '';
         };
 
-        const currentDistance = getElementValue('currentDistance');
+        const weekDistance = getElementValue('weekDistance');
         const distanceType = getElementValue('distanceType');
         const personalBest = getElementValue('personalBest');
         const personalBestType = getElementValue('personalBestType');
         const plannedDistance = getElementValue('plannedDistance');
         const weeks = getElementValue('weeks');
 
-        const trainingDays = [];
+        const trainingDays = [];    
         document.querySelectorAll('.custom-checkbox input[type="checkbox"]:checked').forEach(function (checkbox) {
             trainingDays.push(checkbox.value);
         });
 
         const formData = {
-            currentDistance,
+            weekDistance,
             distanceType,
             personalBest,
             personalBestType,
@@ -217,8 +217,11 @@ $("#generatePlan").click(function() {
     // Get user inputs
     let weeks = $("#weeks").val();
     let personalBest = $("#personalBest").val();
-    let location = $("#demoLocation").val();
-    // For the Event's inner HTML
+    let weekDistance = $("#weekDistance").val();
+    //convert weekDistance to km according to the user's choice
+    let distanceType = $("#distanceType").val();
+    let personalBestType = $("#personalBestType").val();
+    // For the planDistance's inner HTML
     const plannedDistanceSelect = document.getElementById("plannedDistance");
     const selectedIndex = plannedDistanceSelect.selectedIndex;
     const plannedDistanceType = plannedDistanceSelect.options[selectedIndex].innerHTML;
@@ -234,9 +237,20 @@ $("#generatePlan").click(function() {
     <body style="background-color: #1393b6; padding: 20px; border-radius: 10px;">
     <h2 style="text-align: center; color: #0a0c0f;">${plannedDistanceType} Training Plan</h2>
     <p><strong>Weeks:</strong> ${weeks}</p>
-    <p><strong>Personal Best:</strong> ${personalBest}</p>
-    <p><strong>Location:</strong> ${location}</p>
+    <p><strong>Personal Best:</strong> ${personalBest} mins</p>
     <!-- Include additional plan details here -->
+    `;
+    if (distanceType === "km") {
+        content += `
+        <p><strong>Current Week Distance:</strong> ${weekDistance} Kilometres</p>
+        `;
+    } else if (distanceType === "miles") {
+        content += `
+        <p><strong>Current Week Distance:</strong> ${weekDistance} Miles</p>
+        `;
+    }
+    content += `
+    <p><strong>Planned Distance:</strong> ${plannedDistanceType}</p>
     <p><strong>Generated on:</strong> ${new Date().toLocaleDateString()}</p>
     `;
     content += '<h2 style="text-align: center; color: #0a0c0f;">Training Plan</h2>';
@@ -260,13 +274,16 @@ $("#generatePlan").click(function() {
     let printWindow = window.open('', '_blank');
     printWindow.document.open();
     printWindow.document.write('<html><head><title>Marathon Training Plan</title></head><body>' + content + '</body></html>');
-    printWindow.document.close();
+    printWindow.document.close();   
     // Print the window
     printWindow.print();
 });
 
 // Function to get a training activity based on the day of the week
 function getTrainingActivity(day) {
+    // function to calculate the VO2max based on the personal best
+    //getVO2max(personalBest, personalBestType);
+    // function to genrate distance depanding on the VO2max
     // customize this function based on your specific training plan
     // returns a placeholder activity
     switch (day) {
@@ -288,7 +305,14 @@ function getTrainingActivity(day) {
             return '';
     }
 }
-
+// function to calculate the VO2max based on the personal best
+function getVO2max(personalBest, personalBestType) {
+    if (personalBestType === "km") {
+        return personalBest / 3.5;
+    } else if (personalBestType === "miles") {
+        return personalBest / 1.609;
+    }
+}
 });
 
 
