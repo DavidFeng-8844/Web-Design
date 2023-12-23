@@ -104,16 +104,14 @@ $(document).ready(function () {
             <p>Generated on: ${new Date().toLocaleDateString()}</p>
         `;
 
-        var element = document.createElement('div');
-        element.innerHTML = content;
+        // Create a new window with the content
+        var printWindow = window.open('', '_blank');
+        printWindow.document.open();
+        printWindow.document.write('<html><head><title>Marathon Training Plan</title></head><body>' + content + '</body></html>');
+        printWindow.document.close();
 
-        html2pdf(element, {
-            margin: 10,
-            filename: 'marathon_training_plan.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2 },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        });
+        // Print the window
+        printWindow.print();
     });
 });
 
