@@ -1118,6 +1118,7 @@
     }
 
     .events-detail{
+        padding-top: 3px;
         color: black;
         position: relative;
         width: 100%;
@@ -1126,7 +1127,6 @@
 
     .events-detail-col{
         font-family: Georgia, 'Times New Roman', Times, serif;
-        margin-top: 3vh;
         display: none;
         border: #000000 2px solid;
         padding: 5px;
