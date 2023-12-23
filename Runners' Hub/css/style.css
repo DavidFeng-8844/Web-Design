@@ -745,7 +745,7 @@
         width: auto;
     }
     #water {
-        height: auto;
+        height: 80vh;
         width: auto;
     }
     #carbohydrates {
@@ -757,7 +757,7 @@
         width: auto;
     }
     #calories {
-        height: 95vh;
+        height: auto;
         width: auto;
     }
     /*Gears page*/
@@ -1214,10 +1214,6 @@
             width: 100%;
             height: 15vw;
             object-fit: cover;
-        }
-        #calories img{
-            height: 30vh; 
-            width: auto;
         }
     }
 
