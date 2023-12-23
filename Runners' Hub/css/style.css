@@ -208,6 +208,103 @@
     }
 
 
+    /*The Plan generator*/
+    .plan-container {
+        background-color: #1393b6;
+        padding: 32px 0;
+    }
+
+    .plan-form-content {
+        background-color: #fff;
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    /* Form labels */
+    .tool-label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    /* Form inputs */
+    .tool-input,
+    .custom-select,
+    .custom-km-mile {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Style for the custom checkbox container */
+    .custom-checkbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    /* Style for individual checkbox labels */
+    .custom-checkbox label {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    
+    /* Style for the checkbox input */
+    .custom-checkbox input[type="checkbox"] {
+        display: none;
+    }
+    
+    /* Style for the custom checkmark */
+    .checkmark {
+        width: 18px;
+        height: 18px;
+        border: 1px solid #333;
+        background-color: #fff;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Style for the checkmark when the checkbox is checked */
+    .custom-checkbox input[type="checkbox"]:checked + .checkmark::before {
+        content: "\2713"; /* Unicode checkmark character */
+        color: #007bff; /* Change color as needed */
+        font-size: 14px;
+    }
+
+    /* Button styling */
+    #generatePlan {
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    #generatePlan:hover {
+        background-color: #0056b3;
+    }
+
+    .plan-text h1{
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 44px;
+    }
+
+    .plan-text p {
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
 
     .wel{
         background-repeat: no-repeat;

@@ -49,34 +49,89 @@
     <div id="progress-container">
         <div id="progress-bar"></div>
         <div id="progress-text"></div>
-      </div>      
-      <button type="button" class="btn btn-info" data-toggle="button" onclick="getLocation()">Get Location</button>
-      <p id="demoLocation" class="d-none"></p>
-      <form id="trainingForm">
-        <div class="form-group">
-            <label for="weeks">Training Plan Weeks:</label>
-            <input type="number" class="form-control" id="weeks" required>
+    </div>      
+    <button type="button" class="btn btn-info" data-toggle="button" onclick="getLocation()">Get Location</button>
+    <p id="demoLocation" class="d-none"></p>
+    <div class="plan-container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5 plan-text">
+                        <h1 class="font-weight-normal">Generate a Free Running Plan</h1>
+                        <p class="text-center">Use the tool below to make a running schedule to help train for your next race.</p>
+                    </div>
+                    <div class="plan-form plan-form-content">
+                        <div id="error-message" class="error-message">Please fill in all the required fields.</div>
+                        <div class="form-group">
+                            <label for="currentDistance">How far do you currently run in a week?</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="currentDistance" placeholder="0" min="1">
+                                <div class="input-group-append">
+                                    <select class="custom-select" id="distanceType">
+                                        <option>Select...</option>
+                                        <option value="km">Kilometers</option>
+                                        <option value="miles">Miles</option>
+                                    </select>
+                                    <div class="select-box"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Personal-Best">What is your Personal Best?</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="PersonalBest" placeholder="0" min="1">
+                                <div class="input-group-append">
+                                    <select class="custom-select" id="distanceType">
+                                        <option>Select...</option>
+                                        <option value="km">5K</option>
+                                        <option value="miles">10K</option>
+                                        <option value="miles">Half Marathon</option>
+                                        <option value="miles">Marathon</option>
+                                    </select>
+                                    <div class="select-box"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="plannedDistance">What distance are you training for?</label>
+                            <div class="input-group">
+                                <select class="custom-select" id="plannedDistance">
+                                    <option>Select...</option>
+                                    <option value="1.60934">1 Mile</option>
+                                    <option value="5">5K</option>
+                                    <option value="8.04672">5 Miles</option>    
+                                    <option value="9.65606">6 Miles</option>
+                                    <option value="10">10K</option>
+                                    <option value="15">15 KM</option>
+                                    <option value="16.0934">10 Miles</option>
+                                    <option value="21.0975">Half Marathon</option>
+                                    <option value="42.195">Marathon</option>
+                                    <option value="custom">Custom</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="weeks-until">How many weeks do you have before you run?</label>
+                            <input type="number" class="form-control" id="weeks" placeholder="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="training-days">Which days of the week can you train on?</label>
+                            <div class="custom-checkbox">
+                                <label><input type="checkbox" id="monday" value="mon" name="monday" required>Monday<span class="checkmark"></span></label>
+                                <label><input type="checkbox" id="tuesday" value="tue" name="tuesday" required> Tuesday<span class="checkmark"></span></label>
+                                <label><input type="checkbox" id="wednesday" value="wed" name="wednesday" required> Wednesday<span class="checkmark"></span></label>
+                                <label><input type="checkbox" id="thursday" value="thu" name="thursday" required> Thursday<span class="checkmark"></span></label>
+                                <label><input type="checkbox" id="friday" value="fri" name="friday" required> Friday<span class="checkmark"></span></label>
+                                <label><input type="checkbox" id="saturday" value="sat" name="saturday" required> Saturday<span class="checkmark"></span></label>
+                                <label><input type="checkbox" id="sunday" value="sun" name="sunday" required> Sunday<span class="checkmark"></span></label>
+                            </div>
+                        </div>
+                        <button id="generatePlan" class="generate-btn">Generate Plan</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="personalBest">Personal Best:</label>
-            <select class="form-control" id="personalBest">
-                <option value="5K">5KM</option>
-                <option value="10K">10KM</option>
-                <option value="halfMarathon">Half Marathon</option>
-                <option value="marathon">Marathon</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="age">Age:</label>
-            <input type="number" class="form-control" id="age" required>
-        </div>
-        <div class="form-group">
-            <label for="location">Location:</label>
-            <input type="text" class="form-control" id="location" required>
-        </div>
-        <button type="button" class="btn btn-primary" id="generatePlan">Generate Plan</button>
-    </form>
-    <div id="chartdiv" style="width: 100%; height: 500px;"></div>
+    </div>
     <div class="contact-address" id="contact">
     <h2 class="title"> __ GET IN TOUCH</h2>
     <div class="contact-address-list">
