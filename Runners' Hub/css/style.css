@@ -1007,6 +1007,39 @@
         height: auto;
     }
 
+    /* Additional styling for the draggable modal cards */
+    .draggable-card {
+        cursor: move;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        margin-top: 18px;
+    }
+
+    #modal-cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #modal-cards-container .draggable-card {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+    }
+
+    .add-to-modal {
+        cursor: pointer;
+    }
+
+    .remove-icon {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+    }
+      
+
     /*events page*/
 
     .events-container{
