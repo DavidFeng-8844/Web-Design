@@ -1038,6 +1038,10 @@
         right: 5px;
         cursor: pointer;
     }
+    /* Make it appear above other elements */
+    #openModalIcon {
+        z-index: 1000; 
+    }
       
 
     /*events page*/
@@ -1176,7 +1180,7 @@
     .card-img-custom {
         position: static;
         width: auto;
-        height: 200px; /* Adjust the height as needed */
+        height: 200px; 
         object-fit: cover; /* Maintain aspect ratio and cover the entire container */
     }
 
@@ -1606,9 +1610,7 @@
 
         }
 
-        /*events page*/
-        /*Adjust the events-detail class to enhance mobile reading
-        experience*/
+        /*events page experience*/
         .events-detail{
             color: black;
             position: relative;
