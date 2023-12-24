@@ -68,16 +68,16 @@
           </h6>
         </div>
           <!-- Icon to open the modal -->
-        <div id="openModalIcon" class="text-center" style="position: fixed; top: 90%; left: 90%; cursor: pointer;">
-          <span class="badge badge-primary">Open Modal</span>
+        <div id="openModalIcon" class="text-center">
+          <span class="badge badge-primary">Compare</span>
         </div>
 
         <!-- Modal -->
         <div class="modal fade" id="draggableModal" tabindex="-1" role="dialog" aria-labelledby="draggableModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content" style="overflow: scroll;">
               <div class="modal-header">
-                <h5 class="modal-title" id="draggableModalLabel">Draggable Modal</h5>
+                <h5 class="modal-title" id="draggableModalLabel">Shoes Comparsion Pros & Cons</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -145,7 +145,7 @@
 
               <a href="#gears-show1" class="btn btn-info my-0 text-center" data-toggle="modal" data-target="#gears-overlay1">Show Details</a>
               <!-- Button templates to add specific content to the modal -->
-              <button class="btn btn-primary add-to-modal" data-content="Content for Button 1">Add to comparsion</button>
+              <button class="btn btn-primary add-to-modal" shoe-comparsion-content="<h5>Adios Pro 3</h5> <br> <img class='img-fluid' src='content/gears/images/adiospro3.webp' style='height: 45vh; padding-left: 50px;' draggable='false' class='text-center my-auto'><br>Pro: Bouncy <br>Cons: Not friendly to your purse">Add to comparsion</button>
 
               <div id="gears-overlay1" class="modal fade">
                 <div class="modal-dialog modal-lg">
@@ -222,7 +222,7 @@
               </div>
 
               <a href="#gears-show2" class="btn btn-info my-0 text-center" data-toggle="modal" data-target="#gears-overlay2">Show Details</a>
-              <button class="btn btn-primary add-to-modal" data-content="Content for Button 2">Add to comparsion</button>
+              <button class="btn btn-primary add-to-modal" shoe-comparsion-content="<h5>Adios 8</h5> <br> <img class='img-fluid' src='content/gears/images/adizero8.jpg' style='height: 35vh; padding-left: 50px;' draggable='false' class='text-center my-auto'><br>Pro: Affordable <br>Cons: Not enough speed">Add to comparsion</button>
 
               <div id="gears-overlay2" class="modal fade">
                 <div class="modal-dialog modal-lg">
@@ -297,7 +297,7 @@
               </div>
 
               <a href="#gears-show1" class="btn btn-info my-0 text-center" data-toggle="modal" data-target="#gears-overlay3">Show Details</a>
-              <button class="btn btn-primary add-to-modal" data-content="Content for Button 3">Add to comparsion</button>
+              <button class="btn btn-primary add-to-modal" shoe-comparsion-content="<h5>Nike ZoomX vapourfly Next%2</h5> <br> <img class='img-fluid' src='content/gears/images/nikevapourfly.webp' style='height: 35vh; padding-left: 50px;' draggable='false' class='text-center my-auto'><br>Pro: Soft and Bouncy <br>Cons: Not suitable for everyone">Add to comparsion</button>
 
               <div id="gears-overlay3" class="modal fade">
                 <div class="modal-dialog modal-lg">
@@ -372,7 +372,7 @@
               </div>
 
               <a href="#gears-show1" class="btn btn-info my-0 text-center" data-toggle="modal" data-target="#gears-overlay4">Show Details</a>
-              <button class="btn btn-primary add-to-modal" data-content="Content for Button 4">Add to comparsion</button>
+              <button class="btn btn-primary add-to-modal" shoe-comparsion-content="<h5>Asics Metaspeed plus</h5> <br> <img class='img-fluid' src='content/gears/images/ascismetspeed.webp' style='height: 35vh; padding-left: 50px;' draggable='false' class='text-center my-auto'><br>Pro: Affordable <br>Cons: Thet calf is not friendly to your ankle and calf ">Add to comparsion</button>
 
               <div id="gears-overlay4" class="modal fade">
                 <div class="modal-dialog modal-lg">

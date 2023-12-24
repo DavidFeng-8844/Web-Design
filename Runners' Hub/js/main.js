@@ -588,7 +588,7 @@ $(document).ready(function () {
     let addButtons = document.querySelectorAll('.add-to-comparison');
     addButtons.forEach(function (button) {
       button.addEventListener('click', function () {
-        let content = button.getAttribute('data-content');
+        let content = button.getAttribute('shoe-comparsion-content');
         addItemToModal(content);
       });
     });
@@ -608,10 +608,11 @@ $(document).ready(function () {
     let addButtonTemplates = document.querySelectorAll('.add-to-modal');
     addButtonTemplates.forEach(function (button) {
       button.addEventListener('click', function () {
-        let content = button.getAttribute('data-content');
+        let content = button.getAttribute('shoe-comparsion-content');
         addItemToModal(content);
       });
     });
+    
 
     // Function to remove a card from the comparison modal
     window.removeCard = function (element) {
