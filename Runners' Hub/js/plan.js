@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function initializeFormData() {
         const storedData = localStorage.getItem('runningPlanFormData');
-
         if (storedData) {
             const formData = JSON.parse(storedData);
 
@@ -50,9 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Check if the element is an input or select
                     if (element.tagName === 'INPUT' || element.tagName === 'SELECT') {
                         element.value = value || '';
-                    } else if (element.tagName === 'CHECKBOX') {
-                        // Special handling for checkboxes
-                        element.checked = value = true;
+                    } else if (element.tagName === 'INPUT' && element.type === 'checkbox') {
+                        element.checked = value || false;
                     }
                 }
             });
