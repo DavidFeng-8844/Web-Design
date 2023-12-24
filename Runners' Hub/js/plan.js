@@ -134,11 +134,11 @@ $(document).ready(function () {
         content += '<table style="margin: 0 auto; border-collapse: collapse; width: 80%; margin-top: 20px;" border="1">';
         content += '<thead style="background-color: #0a0c0f; color: #fff;"><tr><th style="padding: 10px;">Training Type</th><th style="padding: 10px;">Pace(min/km)</th></tr></thead>';
         content += '<tbody>';
+        content += `<tr><td>Easy</td><td>${ePace}</td></tr>`;
         content += `<tr><td>Marathon Pace</td><td>${mPace}</td></tr>`;
         content += `<tr><td>Threshold</td><td>${tPace}</td></tr>`;
         content += `<tr><td>Interval</td><td>${iPace}</td></tr>`;
         content += `<tr><td>Repeat</td><td>${rPace}</td></tr>`;
-        content += `<tr><td>Easy</td><td>${ePace}</td></tr>`;
         content += '</tbody></table>';
         //Plan table body
         content += '<h2 style="text-align: center; color: #0a0c0f;">Training Plan</h2>';
@@ -172,7 +172,7 @@ $(document).ready(function () {
         content += '<tr><td>55</td><td>18</td><td>38</td><td>84</td><td>176</td></tr>';
         content += '<tr><td>60</td><td>17</td><td>35</td><td>78</td><td>163</td></tr>';
         content += '<tr><td>65</td><td>16</td><td>33</td><td>72</td><td>151</td></tr>';
-        content += '<tr><td>70</td><td>15</td><td>31</td><td>68</td><td>141</td></tr>';
+        content += '<tr><td>70</td><td>15</td><td>31</td><td>68</td><td>141</td></tr>'; 
         content += '<tr><td>75</td><td>14</td><td>29</td><td>64</td><td>132</td></tr>';
         content += '<tr><td>80</td><td>13</td><td>27</td><td>60</td><td>124</td></tr>';
         content += '<tr><td>85</td><td>12</td><td>26</td><td>57</td><td>117</td></tr>';
