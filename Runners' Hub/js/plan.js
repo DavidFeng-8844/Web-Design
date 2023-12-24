@@ -1,4 +1,4 @@
-//Use HTML storage to store the planning form info   
+//Use HTML storage to store the planning form info
 document.addEventListener('DOMContentLoaded', function () {
     function handleFormChange() {
         const getElementValue = (elementId) => {
@@ -170,7 +170,7 @@ $(document).ready(function () {
         content += '<tr><td>55</td><td>18</td><td>38</td><td>84</td><td>176</td></tr>';
         content += '<tr><td>60</td><td>17</td><td>35</td><td>78</td><td>163</td></tr>';
         content += '<tr><td>65</td><td>16</td><td>33</td><td>72</td><td>151</td></tr>';
-        content += '<tr><td>70</td><td>15</td><td>31</td><td>68</td><td>141</td></tr>'; 
+        content += '<tr><td>70</td><td>15</td><td>31</td><td>68</td><td>141</td></tr>';
         content += '<tr><td>75</td><td>14</td><td>29</td><td>64</td><td>132</td></tr>';
         content += '<tr><td>80</td><td>13</td><td>27</td><td>60</td><td>124</td></tr>';
         content += '<tr><td>85</td><td>12</td><td>26</td><td>57</td><td>117</td></tr>';
@@ -310,13 +310,13 @@ $(document).ready(function () {
           Interval: 0.8,
           Repeat: 0.6,
         };
-    
+
         const baseSets = {
           Interval: 3,
           Tempo: 6,
           Repeat: 9,
         };
-    
+
         // Determine distance factor based on weekDistance and vdotValue
         let distanceFactor;
         if (weekDistance >= 60) {
@@ -326,22 +326,22 @@ $(document).ready(function () {
         } else {
           distanceFactor = 0.9;
         }
-    
+
         // Use distance factor to calculate distance
         const baseDistance = baseDistances[trainingType];
         const distance = (baseDistance * distanceFactor).toFixed(1);
-    
+
         // Determine set factor based on training type
         const setFactor = baseSets[trainingType] || 1;
-    
+
         // Calculate distance considering sets for applicable training types
         const totalDistance = trainingType === 'Marathon' || trainingType === 'Easy'
           ? distance
           : (distance * setFactor).toFixed(1);
-    
+
         // Round sets to the nearest integer
         const roundedSets = Math.round(setFactor);
-    
+
         return { distance: parseFloat(totalDistance), sets: roundedSets };
     }
 

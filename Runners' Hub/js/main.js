@@ -28,7 +28,26 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', updateProgressBar);
 });
 
+//Function to search for contents
+function searchAndNavigate() {
+    // Get the search input value
+    var searchTerm = document.getElementById('searchInput').value.toLowerCase();
 
+    // Get all elements with the class 'class'
+    var classElements = document.getElementsByClassName('class');
+
+    // Loop through each class element
+    for (var i = 0; i < classElements.length; i++) {
+        var classNumber = classElements[i].getAttribute('data-class-number');
+
+        // Check if the class number matches the search term
+        if (classNumber && classNumber.includes(searchTerm)) {
+            // Scroll to the class element
+            classElements[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+            break; // Stop searching after finding the first match
+        }
+    }
+}
 //JQeury
 $(document).ready(function () {
     //Update messages
