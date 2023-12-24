@@ -105,8 +105,7 @@ $(document).ready(function () {
         <h2 style="text-align: center; color: #0a0c0f;">${plannedDistanceType} Training Plan</h2>
         `;
         //Add the author's information
-        content += '<p style="text-align: center; color: #0a0c0f;">Author:</p>';
-        content += '<p style="text-align: center; color: #0a0c0f;">Name: David Feng</p>';
+        content += '<p style="text-align: center; color: #0a0c0f;">Author: David Feng</p>';
         content += '<p style="text-align: center; color: #0a0c0f;">Email: el22y2f@leeds.ac.uk</p>';
         content += `
         <p style="text-align: justify; color: #0a0c0f;">This training plan is generated based on your personal best time of ${personalBest} mins for ${personalBestType} and your current weekly distance of ${weekDistance} ${distanceType}.</p>
