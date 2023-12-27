@@ -4,22 +4,22 @@ $(document).ready(function () {
     document.getElementById('openModalIcon').addEventListener('click', function () {
         $('#draggableModal').modal('show');
     });
-    
+
     // Add an event listener for drag and drop functionality
     let dragged;
-    
+
     document.addEventListener('dragstart', function (event) {
       // store a reference to the dragged element
       dragged = event.target;
       // make it half transparent
       event.target.style.opacity = .5;
     });
-    
+
     document.addEventListener('dragover', function (event) {
       // prevent default to allow drop
       event.preventDefault();
     });
-    
+
     document.addEventListener('drop', function (event) {
       // prevent default action (open as link for some elements)
       event.preventDefault();
@@ -41,7 +41,7 @@ $(document).ready(function () {
         <p>${content}</p>
         <span class="remove-icon" style="position: relative" onclick="removeCard(this)">&#128465;</span>
       `;
-        container.appendChild(newCard); 
+        container.appendChild(newCard);
         saveCardOrder();
       }
 
@@ -51,7 +51,7 @@ $(document).ready(function () {
         let order = [];
         cards.forEach(function (card) {
           order.push(card.outerHTML);
-        });   
+        });
         localStorage.setItem('cardOrder', JSON.stringify(order));
     }
 
@@ -87,7 +87,7 @@ $(document).ready(function () {
         addItemToModal(content);
       });
     });
-    
+
     // Add an event listener to the clear button to clear the comparison modal
     document.getElementById('clear-modal').addEventListener('click', function () {
         let container = document.getElementById('modal-cards-container');
