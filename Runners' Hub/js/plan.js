@@ -204,7 +204,7 @@ $(document).ready(function () {
         // Create a new window with the content
         let printWindow = window.open('', '_blank');
         printWindow.document.open();
-        printWindow.document.write('<html><head><title>Marathon Training Plan</title></head><body>' + content + '</body></html>');
+        printWindow.document.write('<!DOCTYPE html><head><title>' + plannedDistanceType + 'Training Plan</title></head>' + content + '</!DOCTYPE>');
         printWindow.document.close();
         // Print the window
         printWindow.print();
