@@ -87,6 +87,7 @@ $(document).ready(function () {
         addItemToModal(content);
       });
     });
+    
     // Add an event listener to the clear button to clear the comparison modal
     document.getElementById('clear-modal').addEventListener('click', function () {
         let container = document.getElementById('modal-cards-container');
