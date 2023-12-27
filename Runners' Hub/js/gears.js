@@ -64,15 +64,10 @@ $(document).ready(function () {
           container.innerHTML = order.join('');
         }
     }
-
-    // Add an event listener to the icons to add items to the comparison modal
-    let addButtons = document.querySelectorAll('.add-to-comparison');
-    addButtons.forEach(function (button) {
-      button.addEventListener('click', function () {
-        let content = button.getAttribute('shoe-comparsion-content');
-        addItemToModal(content);
-      });
-    });
+    //Function to clear the order of cards from localStorage
+    function clearCardOrder() {
+        localStorage.removeItem('cardOrder');
+    }
 
     document.addEventListener('dragend', function (event) {
       // reset the transparency
@@ -83,7 +78,6 @@ $(document).ready(function () {
 
     // Load the initial order of cards when the page is loaded
     loadCardOrder();
-    
 
     // Add an event listener to the buttons to add content to the comparison modal
     let addButtonTemplates = document.querySelectorAll('.add-to-modal');
@@ -93,7 +87,12 @@ $(document).ready(function () {
         addItemToModal(content);
       });
     });
-    
+    // Add an event listener to the clear button to clear the comparison modal
+    document.getElementById('clear-modal').addEventListener('click', function () {
+        let container = document.getElementById('modal-cards-container');
+        container.innerHTML = '';
+        clearCardOrder();
+    });
 
     // Function to remove a card from the comparison modal
     window.removeCard = function (element) {
