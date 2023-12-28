@@ -6,133 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
     <title>Runner's Hub</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="56">
-  <div class="alert alert-info mb-0">
+<div class="alert alert-info mb-0">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <strong>Update:</strong> Welcome to Runner's Hub! Check out the latest features and improvements.
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <div class="row">
+            <div class="col-12">
+                <strong>Update:</strong> Welcome to Runner's Hub! Check out the latest features and improvements.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <!--Add some comments-->
-  <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+</div>
+<!--Add some comments-->
+<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="updateModalLabel">Website Updates</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel">Website Updates</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="update-modal-body">
+                <div class="row">
+                    <div class="col align-self-center">
+                        <div class="update-image text-center">
+                            <img src="content/index/plan.png" alt="plan1">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="update-text">
+                            <h4>Plan</h4>
+                            <p>Plan your running schedule</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    onclick="window.location.href='plan.html'">Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col align-self-center">
+                        <div class="update-image text-center">
+                            <img src="content/index/progressbar.png" alt="plan1">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="update-text">
+                            <h4>Progress bar</h4>
+                            <p>Make a better reading experience</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="plan.html"
+                                    onclick="window.location.href='plan.html'">Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col align-self-center">
+                        <div class="update-image text-center">
+                            <img src="content/index/location.png" style="height: 10vh; width: 15vh; overflow: hidden;"
+                                 alt="plan1">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="update-text">
+                            <h4>Location</h4>
+                            <p>Know your nearest Major Marathon</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="plan.html"
+                                    onclick="window.location.href='events.html'">Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col align-self-center">
+                        <div class="update-image text-center">
+                            <img src="content/index/comparison.png" style="height: 10vh; width: 15vh; overflow: hidden;"
+                                 alt="plan1">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="update-text">
+                            <h4>Shoe Comparsion</h4>
+                            <p>Compare the different shoes</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="plan.html"
+                                    onclick="window.location.href='gears.html'">Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                        <div class="update-table ml-5">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th style="width: 450px;">Items</th>
+                                    <th style="width: 250px;">Techniques</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td onclick="window.location.href='plan.html'">Progress bar</td>
+                                    <td>JavaScript jquery</td>
+                                </tr>
+                                <tr>
+                                    <td onclick="window.location.href='plan.html'">Plan</td>
+                                    <td>JavaScript jquery HTML Storage</td>
+                                </tr>
+                                <tr>
+                                    <td onclick="window.location.href='events.html'">Location</td>
+                                    <td>JavaScript HTML Location</td>
+                                </tr>
+                                <tr>
+                                    <td onclick="window.location.href='gears.html'">Shoe Comparsion</td>
+                                    <td>JavaScript Jquery HTML Storage</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
         </div>
-        <div class="update-modal-body">
-          <div class="row">
-            <div class="col align-self-center">
-              <div class="update-image text-center">
-                <img src="content/index/plan.png" alt="plan1">
-              </div>
-            </div>
-            <div class="col">
-              <div class="update-text">
-                <h4>Plan</h4>
-                <p>Plan your running schedule</p>
-                <button type="button" class="btn btn-primary" data-toggle="modal" onclick="window.location.href='plan.html'">Learn More</button>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col align-self-center">
-              <div class="update-image text-center">
-                <img src="content/index/progressbar.png" alt="plan1">
-              </div>
-            </div>
-            <div class="col">
-              <div class="update-text">
-                <h4>Progress bar</h4>
-                <p>Make a better reading experience</p>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="plan.html" onclick="window.location.href='plan.html'">Learn More</button>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col align-self-center">
-              <div class="update-image text-center">
-                <img src="content/index/location.png" style="height: 10vh; width: 15vh; overflow: hidden;" alt="plan1">
-              </div>
-            </div>
-            <div class="col">
-              <div class="update-text">
-                <h4>Location</h4>
-                <p>Know your nearest Major Marathon</p>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="plan.html" onclick="window.location.href='events.html'">Learn More</button>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col align-self-center">
-              <div class="update-image text-center">
-                <img src="content/index/comparison.png" style="height: 10vh; width: 15vh; overflow: hidden;" alt="plan1">
-              </div>
-            </div>
-            <div class="col">
-              <div class="update-text">
-                <h4>Shoe Comparsion</h4>
-                <p>Compare the different shoes</p>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="plan.html" onclick="window.location.href='gears.html'">Learn More</button>
-              </div>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-6">
-              <div class="update-table ml-5">
-                <table>
-                  <thead>
-                    <tr>
-                      <th style="width: 450px;">Items </th>
-                      <th style="width: 250px;">Techniques</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td onclick="window.location.href='plan.html'">Progress bar</td>
-                      <td>JavaScript jquery</td>
-                    </tr>
-                    <tr>
-                      <td onclick="window.location.href='plan.html'">Plan</td>
-                      <td>JavaScript jquery HTML Storage</td>
-                    </tr>
-                    <tr>
-                      <td onclick="window.location.href='events.html'">Location</td>
-                      <td>JavaScript HTML Location</td>
-                    </tr>
-                    <tr>
-                      <td onclick="window.location.href='gears.html'">Shoe Comparsion</td>
-                      <td>JavaScript Jquery HTML Storage</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
     </div>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-dark">
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="index.html"><img src="images/favicon.ico" alt="logo-favicon"></a>
     <a class="navbar-brand" href="index.html">Runners Hub</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -165,147 +178,158 @@
             <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
-  </nav>
-  <div id="progress-container">
+</nav>
+<div id="progress-container">
     <div id="progress-bar"></div>
     <div id="progress-text" class=""></div>
-  </div>
-    <!--Home section-->
-    <section id="home">
-        <div class="wel">
-         <div class="wel-text">
-          <h1>Welcome to Runner's Hub</h1>
-             <br>
-             <p>
-              <h3>
+</div>
+<!--Home section-->
+<section id="home">
+    <div class="wel">
+        <div class="wel-text">
+            <h1>Welcome to Runner's Hub</h1>
+            <br>
+            <p>
+            <h3>
                 This is where you learn how to be faster and stronger
-               </h3>
-             </p>
-
-         </div>
+            </h3>
+            </p>
 
         </div>
-    </section>
-    <main>
-     <div class="about" id="about">
+
+    </div>
+</section>
+<main>
+    <div class="about" id="about">
         <div>
-        <div class="title">
-          <h2>
-                  Get to Know me
-          </h2>
+            <div class="title">
+                <h2>
+                    Get to Know me
+                </h2>
+            </div>
+            <div class="about-main">
+                <div>
+
+                </div>
+                <div class="about-text">
+                    <h3>I'm David <br>The owner of this Website</h3>
+                    <br>
+                    <h4>__A Computer Science Student</h4>
+
+                    <!--div style="margin-top:20px">
+                       <p>
+                         <h5>
+                           Follow Me on Social media
+                         </h5>
+                           <a href="https://space.bilibili.com/280037131?spm_id_from=333.1007.0.0" target="_blank">
+                             <h6>
+                               BILIBILI
+                               <img src="images/bilibili.png" alt="bilibili">
+                             </h6>
+                           </a>
+                       </p>
+
+                   </!div-->
+                </div>
+
+            </div>
         </div>
-        <div class="about-main">
-          <div>
 
-          </div>
-          <div class="about-text">
-             <h3>I'm David <br>The owner of this Website</h3>
-             <br>
-             <h4>__A Computer Science Student</h4>
+    </div>
 
-             <!--div style="margin-top:20px">
-                <p>
-                  <h5>
-                    Follow Me on Social media
-                  </h5>
-                    <a href="https://space.bilibili.com/280037131?spm_id_from=333.1007.0.0" target="_blank">
-                      <h6>
-                        BILIBILI
-                        <img src="images/bilibili.png" alt="bilibili">
-                      </h6>
-                    </a>
-                </p>
-
-            </!div-->
-          </div>
-
-        </div>
-        </div>
-
-      </div>
-
-      <div class="training" id="training">
+    <div class="training" id="training">
         <h2 class="title"> __ HOW TO Train</h2>
 
         <div class="training-main">
-          <div class="training-image">
-            <img src="content/training/trainingpics/Eliud_Kipchoge.jpg" alt="Eliud_Kipchoge">
-            <p>
-              <a href="https://www.instagram.com/p/CxteRpbvvvC/?img_index=1" target="_blank">
-                <h6>
-                  Eliud Kipchoge
-                </h6>
-              </a>
-            </p>
-          </div>
-          <div class="training-text">
-            <h3>Long Slow Distance</h3>
-            <p style="font-style: italic;">
-              Long Slow Distance (LSD) training helps runners improve their cardiovascular fitness, build a solid base of endurance, and enhance their ability to sustain a consistent pace over longer distances. It is a crucial component of many distance running training programs, especially for those preparing for events like marathons and half-marathons.
-            </p>
+            <div class="training-image">
+                <img src="content/training/trainingpics/Eliud_Kipchoge.jpg" alt="Eliud_Kipchoge">
+                <p>
+                    <a href="https://www.instagram.com/p/CxteRpbvvvC/?img_index=1" target="_blank">
+                        <h6>
+                            Eliud Kipchoge
+                        </h6>
+                    </a>
+                </p>
+            </div>
+            <div class="training-text">
+                <h3>Long Slow Distance</h3>
+                <p style="font-style: italic;">
+                    Long Slow Distance (LSD) training helps runners improve their cardiovascular fitness, build a solid
+                    base of endurance, and enhance their ability to sustain a consistent pace over longer distances. It
+                    is a crucial component of many distance running training programs, especially for those preparing
+                    for events like marathons and half-marathons.
+                </p>
 
-          </div>
+            </div>
         </div>
 
         <div class="training-main">
-          <div class="training-image">
-            <img src="content/training/trainingpics/Molly_Seidel_Track.jpg" alt="Molly Seidel">
-            <p>
-              <a href="https://www.instagram.com/p/CxteRpbvvvC/?img_index=1" target="_blank">
-                <h6>
-                 Molly Seidel
-                </h6>
-              </a>
-            </p>
-          </div>
-          <div class="training-text">
-            <h3>Fartlek</h3>
-            <p style="font-style: italic;">
-              Fartlek run is a type of training that involves varying your running pace and intensity by incorporating periods of faster running (sprints) and slower running (jogging or walking) in an unstructured and spontaneous manner. It's a versatile and flexible training method used to improve speed, endurance, and overall fitness.
-            </p>
+            <div class="training-image">
+                <img src="content/training/trainingpics/Molly_Seidel_Track.jpg" alt="Molly Seidel">
+                <p>
+                    <a href="https://www.instagram.com/p/CxteRpbvvvC/?img_index=1" target="_blank">
+                        <h6>
+                            Molly Seidel
+                        </h6>
+                    </a>
+                </p>
+            </div>
+            <div class="training-text">
+                <h3>Fartlek</h3>
+                <p style="font-style: italic;">
+                    Fartlek run is a type of training that involves varying your running pace and intensity by
+                    incorporating periods of faster running (sprints) and slower running (jogging or walking) in an
+                    unstructured and spontaneous manner. It's a versatile and flexible training method used to improve
+                    speed, endurance, and overall fitness.
+                </p>
 
-          </div>
+            </div>
         </div>
 
         <a href="training.html" class="training-button">Training-more</a>
 
-      </div>
-    </main>
-      <div class="contact-address" id="contact">
-        <h2 class="title"> __ GET IN TOUCH</h2>
-        <div class="contact-address-list">
+    </div>
+</main>
+<div class="contact-address" id="contact">
+    <h2 class="title"> __ GET IN TOUCH</h2>
+    <div class="contact-address-list">
 
-          <div class="contact-list">
+        <div class="contact-list">
             <h4>location</h4>
             <br>
             <p>SWJTU,Chengdu,China</p>
 
-          </div>
+        </div>
 
-          <div class="contact-list">
-             <h4>Opening Hour</h4>
-             <br>
-             <p>9 to 5</p>
-          </div>
+        <div class="contact-list">
+            <h4>Opening Hour</h4>
+            <br>
+            <p>9 to 5</p>
+        </div>
 
-          <div class="contact-list">
+        <div class="contact-list">
             <h4>Say hello</h4>
             <br>
             <p>el22y2f@leeds.ac.uk</p>
-          </div>
+        </div>
 
-          <div class="contact-list">
+        <div class="contact-list">
             <h4>CopyRight</h4>
             <br>
             <p>2023 Yujie Feng. All rights reserved.</p>
-          </div>
-
         </div>
 
-      </div>
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      <script src="js/main.js"></script>
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
